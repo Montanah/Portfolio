@@ -1,0 +1,24 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Repo for my Software Engineering Portfolio!",
+  "main": "index.js",
+  "scripts": {
+    "start": "your-start-command",
+    "build:css": "postcss css/style.css -o public/css/style.css",
+    "deploy": "gh-pages -d public"
+  },
+  "keywords": [
+    "Software Engineering",
+    "Portfolio"
+  ],
+  "author": "Mititi Isaac",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "gh-pages": "^6.1.1",
+    "postcss": "^8.4.33",
+    "postcss-cli": "^9.1.0",
+    "tailwindcss": "^2.2.19"
+  }
+}

@@ -1,0 +1,125 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* General styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Navigation styles */
+  .nav {
+    background-color: #f8f8f8;
+  }
+  
+  .nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .nav li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* Header styles */
+  .header h1 {
+    color: #0066cc;
+  }
+  
+  .header p {
+    font-style: italic;
+  }
+
+  .data-type {
+    font-size: 30px;
+    font-weight: bold;
+    color: #007bff; /* or any other color you prefer */
+  }
+  
+  /* About section styles */
+  .About {
+    margin-top: 20px;
+  }
+  
+  .About h2 {
+    color: #0066cc;
+  }
+  
+  /* Skills section styles */
+  .Skills {
+    margin-top: 20px;
+  }
+  
+  .Skills p {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Experience section styles */
+  .Experience {
+    margin-top: 20px;
+  }
+  
+  .Experience h1 {
+    color: #0066cc;
+  }
+  
+  .Experience ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  /* Projects section styles */
+  .Projects {
+    margin-top: 20px;
+  }
+  
+  .Projects h1 {
+    color: #0066cc;
+  }
+  
+  .Projects h3 {
+    color: #333;
+  }
+  
+  /* Services section styles */
+  .Serivices {
+    margin-top: 20px;
+  }
+  
+  .Serivices h1 {
+    color: #0066cc;
+  }
+  
+  .Serivices h4 {
+    color: #333;
+  }
+  
+  .Serivices p {
+    color: #666;
+  }
+  
+  /* Footer styles */
+  .footer {
+    margin-top: 20px;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+  }
+  
