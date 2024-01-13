@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="public/css/style.css">
     <script src="js/script.js"></script>
 </head>
-<body class="m-10">
-    <section class="bg-gradient-to-r from-indigo-500">
+<body class="">
+    <section class="bg-gradient-to-r from-indigo-600 via-cyan-900 to-blue-900 relative z-0">
         <section class="nav">
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -19,20 +19,24 @@
                 <li><a href="#Contact">Contact</a></li>
             </ul>
         </section>
-        <section class="grid grid-cols-2 divide-x">
-            <section class="header">
-                <h1 class="bg-[radial-gradient(138.06%_1036.51%_at_95.25%_-2.54%,_#7ED4FD_14.06%,#709DF7_51.02%,#4D78EF_79.09%)] bg-clip-text text-5xl leading-[1.2] tracking-tighter text-transparent sm:text-center sm:text-[4rem] sm:leading-[4.75rem] lg:text-left">Mititi Isaac</h1>
-                <p class="text-4xl font-bold">I am a 
+        <section class="mx-2
+        0 flex flex-row">
+            <aside class="header">
+                <h1 class="pt-40 bg-[radial-gradient(138.06%_1036.51%_at_95.25%_-2.54%,_#7ED4FD_14.06%,#709DF7_51.02%,#4D78EF_79.09%)] bg-clip-text text-8xl leading-[1.2] tracking-tighter sm:text-center sm:text-[4rem] sm:leading-[4.75rem] lg:text-left">Mititi Isaac</h1>
+                <p class="text-6xl font-bold">I am a 
                     <span id="typed" data-typed-items="Software Engineer, Frontend Developer, Backend Developer, Graphic Designer, Social Media Manager"></span>
                 </p>
-            </section>
-            <img src="Images/Official_Photo.png" alt="Mititi Isaac" class="photo">
+            </aside>
+            <aside class="">
+                <img src="Images/Official_Photo.png" alt="Mititi Isaac" class="place-items-end">
+            </aside>
         </section>
     </section>
-        <section class="About">
-            <h1 class="text-4xl text-slate-400">About</h1>
+    <section class="bg-black z-10">
+        <section class="px-10">
+            <h1 class="pt-10 text-4xl text-slate-900">About</h1>
             <p>Welcome to my digital space! I am a versatile professional with a passion for crafting exceptional digital experiences. As a Software Engineer, I seamlessly navigate the realms of frontend and backend development, bringing ideas to life through code. My design flair extends beyond development – I am a skilled Graphic Designer, shaping visual narratives that captivate and inspire. As a Social Media Manager, I leverage creativity and strategy to build engaging online presences. This multidisciplinary approach allows me to seamlessly merge technology, design, and communication, ensuring each project is a harmonious blend of innovation and aesthetics. Explore my portfolio to witness the convergence of my diverse skills into cohesive and impactful digital solutions.</p>
-            <h2>Personal Information</h2>
+            <h2 class="text-3xl">Personal Information</h2>
             <p>Name: Mititi Isaac</p>
             <p>Institution: ALX</p>
             <p>Course: Software Engineering</p>
@@ -40,17 +44,16 @@
             <p>Location: Nairobi, Kenya</p>
             <p>Phone: +254 737 336 511</p>
             <p>Email: <a href="mailto:mititi.isaac@gmail.com">mititi.isaac@gmail.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/io-mititi/" target="_blank" rel="noopener">LinkedIn Profile</a></p>
-            <p>GitHub: <a href="https://github.com/Montanah/" target="_blank" rel="noopener">GitHub Profile</a></p>
-
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/io-mititi/" target="_blank" rel="noopener">I.O. Mititi</a></p>
+            <p>GitHub: <a href="https://github.com/Montanah/" target="_blank" rel="noopener">Montanah</a></p>
         </section>
-        <section class="Skills">
+        <section class="m-10">
             <h1 class="text-4xl text-slate-400">Skills</h1>
             <p>JavaScript, React, HTML, CSS, Tailwind CSS, REST API, NodeJS, ExpressJS, MongoDB, MySQL, Redis, Python, Flask, SQLAlchemy, Mocha, Chai, Unittest, Webpack, Nginx</p>
         </section>
-        <section class="Experience">
+        <section class="m-10">
             <h1 class="text-4xl text-slate-400">Experience</h1>
-            <h3>Web Developer, Graphic Designer & Social Media Manager</h3>
+            <h3 class="text-2xl">Web Developer, Graphic Designer & Social Media Manager</h3>
             <p>Deliverance Church Int'l - Nyansiongo, Kisii
             <p>January 2020 to Present</p>
                 <ul>
@@ -61,28 +64,28 @@
                 </ul>
             </p>
         </section>
-        <section class="Projects">
+        <section class="m-10">
             <h1 class="text-4xl text-slate-400">Projects</h1>
-            <h3>Deliverance Church International Nyansiongo Website</h3>
+            <h3 class="text-2xl">Deliverance Church International Nyansiongo Website</h3>
             <p>I built the website for the organisation I currently work with using HTML, CSS and Vanilla Javascript. I also worked with Google Map API to embed the map location of the church on the website. [Project Link: <a href="https://www.deliverancechurchinternationalnyansiongo.org" target="_blank" rel="noopener">www.deliverancechurchinternationalnyansiongo.org</a>] [GitHub Repo Link: <a href="https://github.com/Montanah/DCI-Nyansiongo-Website" target="_blank" rel="noopener">DCI-Nyansiongo-Website</a>]</p>
-            <h3>Devport Web App</h3>
+            <h3 class="text-2xl">Devport Web App</h3>
             <p>DevPort is a user-friendly fullstack web app for developers to showcase skills, education, and projects. With seamless GitHub integration, it streamlines sign-up and populates profiles effortlessly. Users can personalize their portfolios for a visually compelling presentation of their work. I was the Frontend Engineer for the project; making use of HTML, CSS, JavaScript, React.js, Node.js, Nginx, Webpack... [Project Link: devport.edwardiniko.tech] [GitHub Repo Link: https://github.com/Montanah/DevPort]</p>
-            <h3>EdAI Web App</h3>
+            <h3 class="text-2xl">EdAI Web App</h3>
             <p>Was part of a team that designed and developed EdAI, a responsive AI-supported education web application using HTML, CSS, JavaScript, React.js, and Node.js. Implemented responsive design and optimized performance for an enhanced user experience. [Project Link: <a href="edai.popeh.tech" target="_blank" rel="noopener">edai.popeh.tech</a> [GitHub Repo Link: <a href="https://github.com/Montanah/EdAI" target="_blank" rel="noopener">EdAI</a></p>
-            <h3>AirBnB Clone</h3>
+            <h3 class="text-2xl">AirBnB Clone</h3>
             <p>Was part of a team that built an AirBnB clone as one of our school projects. [Project GitHub Link: <a href="https://github.com/Montanah/AirBnB_clone_v4" target="_blank" rel="noopener">AirBnB_clone_v4</a>]</p>
         </section>
-        <section class="Services">
+        <section class="m-10">
             <h1 class="text-4xl text-slate-400">Services</h1>
-            <h4>Frontend Development</h4>
+            <h4 class="text-2xl">Frontend Development</h4>
             <p>As a seasoned Frontend Developer, I specialize in creating visually stunning and user-friendly websites that adapt seamlessly across various devices. My services include responsive web design, intuitive user interface development, and a strong focus on cross-browser compatibility for consistent performance. I excel in optimizing web performance to ensure swift loading times, collaborating closely with design teams, and maintaining codebases through effective refactoring. Additionally, I integrate APIs to enhance website functionality, prioritize accessibility compliance, and stay updated on the latest frontend technologies. My commitment lies in delivering dynamic and innovative web solutions that surpass user expectations while aligning with project goals. I achieve this using HTML, CSS, JavaScript, ReactJS, REST API consumption, Nginx, Tailwind CSS.</p>
-            <h4>Backend Development</h2>
+            <h4 class="text-2xl">Backend Development</h4>
             <p>As a seasoned Backend Developer, I specialize in crafting robust server-side solutions that underpin the seamless functionality of web applications. Proficient in languages such as Node.js and Python, I leverage frameworks like Express.js and Django to streamline backend logic development. My expertise extends to proficiently managing databases, including both relational and NoSQL databases. With a focus on API development, I design and implement RESTful APIs, ensuring smooth communication between frontend and backend systems. I am adept at server management tools like Nginx and prioritize the implementation of secure authentication and authorization protocols. Proficient in version control using Git, I foster collaborative development and efficient code management. Embracing microservices architecture, I design scalable and modular backend systems, incorporating thorough testing processes and automation through CI/CD pipelines for reliability. My commitment is centered on delivering scalable, efficient, and secure backend solutions that exceed project objectives and contribute to the overall success of web applications.</p>
-            <h4>Fullstack Development</h2>
+            <h4 class="text-2xl">Fullstack Development</h4>
             <p>I'm able to combine my frontend and backend knowledge whenever the job descrption requires to deliver a fullsatack application for my clients.</p>
-            <h4>Graphic Design</h2>
+            <h4 class="text-2xl">Graphic Design</h4>
             <p>As a Graphic Designer, I leverage my creativity and proficiency in design tools, including Adobe Creative Suite and Figma, to bring concepts to life through visually stunning graphics. With expertise in Figma, a collaborative design platform, I streamline the design process, allowing for efficient collaboration and iteration. Whether working on branding, marketing collateral, or other design projects, I maintain a keen eye for aesthetics, layout, and color theory. My meticulous approach ensures pixel-perfect designs and cohesive visual identities. Collaborating closely with clients and teams, I translate ideas into impactful visuals that align with brand guidelines and project objectives. My commitment is to deliver visually striking designs that make a lasting impression and elevate the overall visual appeal of any project.</p>
-            <h4>Social Media Management</h2>
+            <h4 class="text-2xl">Social Media Management</h4>
             <p>As a seasoned Social Media Manager, I excel in crafting and implementing strategic social media plans across platforms like Instagram, Twitter, Facebook, and LinkedIn. My expertise lies in creating engaging content, combining compelling copywriting with eye-catching visuals to ensure consistent and impactful messaging. I leverage analytics tools to refine strategies based on performance metrics, maximizing engagement and brand visibility. Whether curating content calendars, managing campaigns, or fostering community engagement, I stay current with industry trends to keep brands at the forefront of the digital landscape. My commitment is to deliver results-driven social media initiatives that forge meaningful connections, elevate brand awareness, and contribute to overall business success.</p>
         </section>
         <section class="footer">
@@ -91,7 +94,7 @@
             <p>Email: <a href="mailto:mititi.isaac@gmail.com">mititi.isaac@gmail.com</a></p>
             <p>Twitter: <a href="https://twitter.com/IO_Mititi" target="_blank" rel="noopener">@IO_Mititi</a></p>
             <p>Mititi Isaac &copy;  2024</p>
-        </section>
-</section>
+        </section>    
+    </section>
 </body>
 </html>

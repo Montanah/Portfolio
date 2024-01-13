@@ -30878,9 +30878,9 @@ body {
 
 /* Navigation styles */
 
-.nav {
-  background-color: #f8f8f8;
-}
+/* .nav {
+    background-color: #f8f8f8;
+  } */
 
 .nav ul {
   list-style-type: none;
@@ -30900,15 +30900,15 @@ body {
 
 /* Header styles */
 
-.header h1 {
-  color: #0066cc;
-}
+/* .header h1 {
+    color: #0066cc;
+  } */
 
-.header p {
-  font-style: italic;
-}
+/* .header p {
+    font-style: italic;
+  } */
 
-.data-type {
+#typed {
   font-size: 30px;
   font-weight: bold;
   color: #007bff; /* or any other color you prefer */
