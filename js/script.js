@@ -16,7 +16,9 @@ function startTypingAnimation(spanElement, typedItems) {
     function typeNextLetter() {
         // Set the next letter in the current item as the text content
         initialText += typedItems[currentIndex][initialText.length];
-        spanElement.textContent = initialText + '|'; // Add the cursor
+
+        // Wrap the text and cursor in a container
+        spanElement.innerHTML = '<span class="text-7xl font-bold">' + initialText + '<span class="cursor">|</span></span>';
 
         // Check if the current item is fully typed
         if (initialText.length < typedItems[currentIndex].length) {
@@ -24,13 +26,13 @@ function startTypingAnimation(spanElement, typedItems) {
             setTimeout(typeNextLetter, 100);
         } else {
             // Schedule erasing the current item after a delay (e.g., 1000 milliseconds)
-            setTimeout(eraseCurrentItem, 1000);
+            setTimeout(eraseCurrentItem, 2000);
         }
     }
 
     function eraseCurrentItem() {
         // Remove the cursor
-        spanElement.textContent = initialText;
+        spanElement.innerHTML = '<span class="text-7xl font-bold">' + initialText + '</span>';
 
         // Schedule typing the next item after a delay (e.g., 500 milliseconds)
         setTimeout(typeNextItem, 500);

@@ -12,7 +12,7 @@ body {
   .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 50px;
   }
   
   /* Navigation styles */
@@ -21,8 +21,12 @@ body {
   } */
   
   .nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
     list-style-type: none;
-    padding: 0;
+    padding-top: 20px;
   }
   
   .nav li {
@@ -32,8 +36,9 @@ body {
   
   .nav a {
     text-decoration: none;
-    color: #333;
+    color: #ffffff;
     font-weight: bold;
+    font-size: 20px;
   }
   
   /* Header styles */
