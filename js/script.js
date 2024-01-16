@@ -1,3 +1,9 @@
+const navigateToContact = () => {
+    document.querySelector('#footer').scrollIntoView({
+        behavior: 'smooth'
+    });
+};
+
 document.addEventListener('DOMContentLoaded', function () {
     // Get the span element
     var typedSpan = document.getElementById('typed');
@@ -47,3 +53,22 @@ function startTypingAnimation(spanElement, typedItems) {
     // Start the typing animation
     typeNextLetter();
 }
+
+var header = document.getElementById('top');
+var body = document.getElementById('bottom');
+var lastScrollTop = 0;
+
+window.addEventListener(scroll, function () {
+    var st = window.scrollY;
+
+    // If scrolling down, increase z-index for body
+    if (st > lastScrollTop || st === 0) {
+        top.style.zIndex = 20;
+        bottom.style.zIndex = 1;
+    } else {
+        top.style.zIndex = 20;
+        bottom.style.zIndex = 1;
+    }
+
+    lastScrollTop = st;
+});

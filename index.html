@@ -11,30 +11,37 @@
     <script src="js/script.js"></script>
 </head>
 <body class="">
-    <section class="bg-gradient-to-r from-indigo-600 via-cyan-900 to-blue-900 relative z-0">
+    <section id="top" class="bg-gradient-to-r from-indigo-600 via-cyan-900 to-blue-900 sticky w-full top-0 z-1">
         <section class="nav">
             <ul>
                 <li><a href="index.html" class=" p-3 hover:bg-blue-600 rounded-2xl">Home</a></li>
                 <li><a href="#About" class=" p-3 hover:bg-blue-600 rounded-2xl">About</a></li>
-                <li><a href="#Contact" class=" p-3 hover:bg-blue-600 rounded-2xl">Contact</a></li>
+                <li><a href="#Contact" onclick="navigateToContact()" class=" p-3 hover:bg-blue-600 rounded-2xl">Contact</a></li>
             </ul>
         </section>
-        <section class="mx-20 grid gap-40 grid-cols-2">
-            <aside class="header">
+        <section class="mx-10 grid gap-40 grid-cols-2">
+            <aside class="">
                 <h1 class="pt-40 text-8xl font-bold text-white tracking-tight text-shadow-md">Mititi Isaac</h1>
-                <p class="text-7xl font-bold">
-                    I am a 
-                    <span id="typed" data-typed-items="Software Engineer, Frontend Developer, Backend Developer, Graphic Designer, Social Media Manager">
-                      Software Engineer
-                    </span>
-                  </p>                  
+                <div>
+                    <p class="text-7xl font-bold">
+                        I am a 
+                        <span id="typed" data-typed-items="Software Engineer, Frontend Developer, Backend Developer, Graphic Designer, Social Media Manager">
+                        Software Engineer
+                        </span>
+                    </p>
+                </div>
+                <div>
+                <button type="button" onclick="navigateToContact()" class="bg-gray-900 font-serif mt-20 text-2xl hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+                    Work With Me
+                </button>
+            </div>                  
             </aside>
             <aside class="">
-                <img src="Images/Official_Photo.png" alt="Mititi Isaac" class="place-items-end">
+                <img src="Images/Official_Photo.png" alt="Mititi Isaac" class="ml-20 place-items-end">
             </aside>
         </section>
     </section>
-    <section class="bg-black z-10">
+    <section id="bottom" class="bg-black relative mt-160">
         <section class="px-10 grid gap-40 grid-cols-2">
             <span>
                 <h1 class="pt-10 text-4xl text-blue-400">About</h1>
@@ -123,7 +130,7 @@
                 </span>
             </div>
         </section>
-        <section class="footer">
+        <section id="footer">
             <h1 class="text-4xl text-slate-400">Contact</h1>
             <p>Phone: +254 737 336 511</p>
             <p>Email: <a href="mailto:mititi.isaac@gmail.com">mititi.isaac@gmail.com</a></p>

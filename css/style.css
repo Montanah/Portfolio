@@ -27,11 +27,12 @@ body {
     align-items: flex-end;
     list-style-type: none;
     padding-top: 20px;
+    margin-right: 20px;
   }
   
   .nav li {
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 5px;
   }
   
   .nav a {
@@ -120,7 +121,7 @@ body {
   }
   
   /* Footer styles */
-  .footer {
+  #footer {
     margin-top: 20px;
     text-align: center;
     background-color: #333;
