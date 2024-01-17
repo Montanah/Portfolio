@@ -14,16 +14,16 @@
     <section id="top" class="bg-gradient-to-r from-indigo-600 via-cyan-900 to-blue-900 sticky w-full top-0 z-1">
         <section class="nav">
             <ul>
-                <li><a href="index.html" class=" p-3 hover:bg-blue-600 rounded-2xl">Home</a></li>
-                <li><a href="#About" class=" p-3 hover:bg-blue-600 rounded-2xl">About</a></li>
-                <li><a href="#Contact" onclick="navigateToContact()" class=" p-3 hover:bg-blue-600 rounded-2xl">Contact</a></li>
+               <li onclick="navigateToSkills()" class="text-black hover:text-white font-bold border-2 border-black py-1 px-3 hover:bg-blue-600 rounded-2xl cursor-pointer">Skills</li>
+                <li onclick="navigateToProjects()" class="text-black hover:text-white font-bold border-2 border-black py-1 px-3 hover:bg-blue-600 rounded-2xl cursor-pointer">Projects</li>
+                <li onclick="navigateToExperience()" class="text-black hover:text-white font-bold border-2 border-black py-1 px-3 hover:bg-blue-600 rounded-2xl cursor-pointer">Experience</li>
             </ul>
         </section>
-        <section class="mx-10 grid gap-40 grid-cols-2">
-            <aside class="">
+        <section class="mx-10 grid grid-cols-3">
+            <aside class="col-span-2">
                 <h1 class="pt-40 text-8xl font-bold text-white tracking-tight text-shadow-md">Mititi Isaac</h1>
                 <div>
-                    <p class="text-7xl font-bold">
+                    <p class="text-7xl font-bold tracking-tighter">
                         I am a 
                         <span id="typed" data-typed-items="Software Engineer, Frontend Developer, Backend Developer, Graphic Designer, Social Media Manager">
                         Software Engineer
@@ -31,13 +31,13 @@
                     </p>
                 </div>
                 <div>
-                <button type="button" onclick="navigateToContact()" class="bg-gray-900 font-serif mt-20 text-2xl hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+                <button type="button" onclick="navigateToContact()" class="bg-gray-900 mt-20 text-2xl hover:bg-blue-700 text-white font-bold py-4 px-10 rounded-full cursor-pointer">
                     Work With Me
                 </button>
             </div>                  
             </aside>
-            <aside class="">
-                <img src="Images/Official_Photo.png" alt="Mititi Isaac" class="ml-20 place-items-end">
+            <aside class="flex items-center justify-center">
+                <img src="Images/Official_Photo.png" alt="Mititi Isaac" class="w-full object-cover h-auto">
             </aside>
         </section>
     </section>
@@ -53,26 +53,45 @@
                     <p>Name: Mititi Isaac</p>
                     <p>Institution: ALX</p>
                     <p>Course: Software Engineering</p>
-                    <p>Year: 2023</p>
+                    <p>Graduation Year: 2023</p>
                     <p>Location: Nairobi, Kenya</p>
-                    <p>Phone: +254 737 336 511</p>
-                    <p>Email: <a href="mailto:mititi.isaac@gmail.com">mititi.isaac@gmail.com</a></p>
-                    <p>LinkedIn: <a href="https://www.linkedin.com/in/io-mititi/" target="_blank" rel="noopener">I.O. Mititi</a></p>
-                    <p>GitHub: <a href="https://github.com/Montanah/" target="_blank" rel="noopener">Montanah</a></p>
+                    <p class="block">
+                        <span class="inline-flex items-center">
+                            <img src="Images/phone_icon.svg" alt="PhoneIcon" class="w-6 h-6 mr-2"> +254 737 336 511
+                        </span>
+                    </p>
+                    <p class="block">
+                        <span class="inline-flex items-center">
+                            <img src="Images/email_icon.svg" alt="EmailIcon" class="w-6 h-6 mr-2">
+                            <a href="mailto:mititi.isaac@gmail.com">mititi.isaac@gmail.com</a>
+                        </span>
+                    </p>
+                    <p class="block">
+                        <span class="inline-flex items-center">
+                            <img src="Images/linkedin_icon.svg" alt="LinkedInIcon" class="w-6 h-6 mr-2">
+                            <a href="https://www.linkedin.com/in/io-mititi/" target="_blank" rel="noopener">I.O. Mititi</a>
+                        </span>
+                    </p>
+                    <p class="block">
+                        <span class="inline-flex items-center">
+                            <img src="Images/github_icon.svg" alt="GitHubIcon" class="w-6 h-6 mr-2">
+                            <a href="https://github.com/Montanah/" target="_blank" rel="noopener">Montanah</a>
+                        </span>
+                    </p>
                 </span>
             </span>
         </section>
-        <section class="m-10">
+        <section id="skills" class="m-10">
             <h1 class="text-4xl text-blue-400">Skills</h1>
             <p class="text-2xl text-gray-400">JavaScript, React, HTML, CSS, Tailwind CSS, REST API, NodeJS, ExpressJS, MongoDB, MySQL, Redis, Python, Flask, SQLAlchemy, Mocha, Chai, Unittest, Webpack, Nginx</p>
         </section>
-        <section class="m-10">
+        <section id="experience" class="m-10">
             <h1 class="text-4xl text-blue-400">Experience</h1>
             <h3 class="text-2xl text-purple-500">Web Developer, Graphic Designer & Social Media Manager</h3>
             <p>Deliverance Church Int'l - Nyansiongo, Kisii, Kenya</p>
             <span class="text-gray-400">
                 <p>January 2020 to Present</p>
-                    <ul>
+                    <ul class="list-disc ml-5">
                         <li>Developed the organisation’s website and frequently update it.</li>
                         <li>Designing engaging and interactive digital content to captivate viewers, using Figma, Adobe and Canva.</li>
                         <li>Managing and growing social media presence, resulting in a 100% increase in website traffic.</li>
@@ -80,32 +99,41 @@
                     </ul>
             </span>
         </section>
-        <section class="m-10">
+        <section id="projects" class="m-10">
             <h1 class="text-4xl text-blue-400">Projects</h1>
-            <div>
-                <span>
-                    <h3 class="text-2xl text-purple-500">Deliverance Church International Nyansiongo Website</h3>
-                    <p class="text-gray-400">I built the website for the organisation I currently work with using HTML, CSS and Vanilla Javascript. I also worked with Google Map API to embed the map location of the church on the website. [Project Link: <a href="https://www.deliverancechurchinternationalnyansiongo.org" target="_blank" rel="noopener">www.deliverancechurchinternationalnyansiongo.org</a>] [GitHub Repo Link: <a href="https://github.com/Montanah/DCI-Nyansiongo-Website" target="_blank" rel="noopener">DCI-Nyansiongo-Website</a>]</p>
-                </span>
-                <span>
-                    <h3 class="text-2xl text-purple-500">Devport Web App</h3>
-                    <p class="text-gray-400">DevPort is a user-friendly fullstack web app for developers to showcase skills, education, and projects. With seamless GitHub integration, it streamlines sign-up and populates profiles effortlessly. Users can personalize their portfolios for a visually compelling presentation of their work. I was the Frontend Engineer for the project; making use of HTML, CSS, JavaScript, React.js, Node.js, Nginx, Webpack... [Project Link: devport.edwardiniko.tech] [GitHub Repo Link: https://github.com/Montanah/DevPort]</p>
-                </span>
-                <span>
-                    <h3 class="text-2xl text-purple-500">EdAI Web App</h3>
-                    <p class="text-gray-400">Was part of a team that designed and developed EdAI, a responsive AI-supported education web application using HTML, CSS, JavaScript, React.js, and Node.js. Implemented responsive design and optimized performance for an enhanced user experience. [Project Link: <a href="edai.popeh.tech" target="_blank" rel="noopener">edai.popeh.tech</a> [GitHub Repo Link: <a href="https://github.com/Montanah/EdAI" target="_blank" rel="noopener">EdAI</a></p>
-                </span>
-                <span>
-                    <h3 class="text-2xl text-purple-500">AirBnB Clone</h3>
-                    <p class="text-gray-400">Was part of a team that built an AirBnB clone as one of our school projects. [Project GitHub Link: <a href="https://github.com/Montanah/AirBnB_clone_v4" target="_blank" rel="noopener">AirBnB_clone_v4</a>]</p>
-                </span>
-                <span>
-                    <h3 class="text-2xl text-purple-500">Graphic Design Work</h3>
+            <div class="swipe-buttons">
+                <button type="button" onclick="handlePrevList()">&lt;</button>
+                <button type="button" onclick="handleNextList()">&gt;</button>
+              </div>
+            <ul id="projectsSwipe">
+                <li class="bg-blue-600 rounded-md p-5 mb-5">
+                    <h3 class="text-2xl text-black">Deliverance Church International Nyansiongo Website</h3>
+                    <p class="text-gray-400">I built the website for the organisation I currently work with using HTML, CSS and Vanilla Javascript. I also worked with Google Map API to embed the map location of the church on the website.</p>
+                    <p>Project Link: <a href="https://www.deliverancechurchinternationalnyansiongo.org" target="_blank" rel="noopener">www.deliverancechurchinternationalnyansiongo.org</a> GitHub Repo Link: <a href="https://github.com/Montanah/DCI-Nyansiongo-Website" target="_blank" rel="noopener">DCI-Nyansiongo-Website</a></p>
+                </li>
+                <li class="bg-blue-600 rounded-md p-5 mb-5">
+                    <h3 class="text-2xl text-black">Devport Web App</h3>
+                    <p class="text-gray-400">DevPort is a user-friendly fullstack web app for developers to showcase skills, education, and projects. With seamless GitHub integration, it streamlines sign-up and populates profiles effortlessly. Users can personalize their portfolios for a visually compelling presentation of their work. I was the Frontend Engineer for the project; making use of HTML, CSS, JavaScript, React.js, Node.js, Nginx, Webpack...</p>
+                    <p>Project Link: <a href="http://devport.edwardiniko.tech" target="_blank" rel="noopener">Devport</a> GitHub Repo Link: <a href="https://github.com/Montanah/DevPort" target="_blank" rel="noopener">Devport</a></p>
+                </li>
+                <li class="bg-blue-600 rounded-md p-5 mb-5">
+                    <h3 class="text-2xl text-black">EdAI Web App</h3>
+                    <p class="text-gray-400">Was part of a team that designed and developed EdAI, a responsive AI-supported education web application using HTML, CSS, JavaScript, React.js, and Node.js. Implemented responsive design and optimized performance for an enhanced user experience.</p>
+                    <p>Project Link: <a href="http://edai.popeh.tech" target="_blank" rel="noopener">edai.popeh.tech</a> GitHub Repo Link: <a href="https://github.com/Montanah/EdAI" target="_blank" rel="noopener">EdAI</a></p>
+                </li>
+                <li class="bg-blue-600 rounded-md p-5 mb-5">
+                    <h3 class="text-2xl text-black">AirBnB Clone</h3>
+                    <p class="text-gray-400">Was part of a team that built an AirBnB clone as one of our school projects.</p>
+                    <p>Project GitHub Link: <a href="https://github.com/Montanah/AirBnB_clone_v4" target="_blank" rel="noopener">AirBnB_clone_v4</a></p>
+                </li>
+                <li class="bg-blue-600 rounded-md p-5 mb-5">
+                    <h3 class="text-2xl text-black">Graphic Design Work</h3>
                     <p class="text-gray-400">Here's a link to some of the graphic design work i've done for my clients, some inclusive of social media management</p>
-                </span>
-            </div>
+                    <a href="https://mititiisaac.wixsite.com/iomititi" target="_blank" rel="noopener">Graphic Design Work</a>
+                </li>
+            </ul>
         </section>
-        <section class="m-10">
+        <section class="mt-10 mx-10">
             <h1 class="text-4xl text-blue-400">Services</h1>
             <div class="grid gap-4 grid-cols-2 grid-rows-3">
                 <span>
@@ -132,9 +160,35 @@
         </section>
         <section id="footer">
             <h1 class="text-4xl text-slate-400">Contact</h1>
-            <p>Phone: +254 737 336 511</p>
-            <p>Email: <a href="mailto:mititi.isaac@gmail.com">mititi.isaac@gmail.com</a></p>
-            <p>Twitter: <a href="https://twitter.com/IO_Mititi" target="_blank" rel="noopener">@IO_Mititi</a></p>
+            <p class="block">
+                <span class="inline-flex items-center">
+                    <img src="Images/phone_icon.svg" alt="PhoneIcon" class="w-6 h-6 mr-2"> +254 737 336 511
+                </span>
+            </p>
+            <p class="block">
+                <span class="inline-flex items-center">
+                    <img src="Images/email_icon.svg" alt="EmailIcon" class="w-6 h-6 mr-2">
+                    <a href="mailto:mititi.isaac@gmail.com">mititi.isaac@gmail.com</a>
+                </span>
+            </p>
+            <p class="block">
+                <span class="inline-flex items-center">
+                    <img src="Images/linkedin_icon.svg" alt="LinkedInIcon" class="w-6 h-6 mr-2">
+                    <a href="https://www.linkedin.com/in/io-mititi/" target="_blank" rel="noopener">I.O. Mititi</a>
+                </span>
+            </p>
+            <p class="block">
+                <span class="inline-flex items-center">
+                    <img src="Images/github_icon.svg" alt="GitHubIcon" class="w-6 h-6 mr-2">
+                    <a href="https://github.com/Montanah/" target="_blank" rel="noopener">Montanah</a>
+                </span>
+            </p>
+            <p class="block">
+                <span class="inline-flex items-center">
+                    <img src="Images/x_icon.svg" alt="TwitterIcon" class="w-6 h-6 mr-2">
+                    <a href="https://twitter.com/IO_Mititi" target="_blank" rel="noopener">@IO_Mititi</a>
+                </span>
+            </p>
             <p>Mititi Isaac &copy;  2024</p>
         </section>    
     </section>

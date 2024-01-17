@@ -32,7 +32,7 @@ body {
   
   .nav li {
     display: inline-block;
-    margin-right: 5px;
+    margin-right: 10px;
   }
   
   .nav a {

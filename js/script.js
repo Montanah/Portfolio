@@ -4,6 +4,24 @@ const navigateToContact = () => {
     });
 };
 
+const navigateToSkills = () => {
+    document.querySelector('#skills').scrollIntoView({
+        behavior: 'smooth'
+    });
+};
+
+const navigateToProjects = () => {
+    document.querySelector('#projects').scrollIntoView({
+        behavior: 'smooth'
+    });
+};
+
+const navigateToExperience = () => {
+    document.querySelector('#experience').scrollIntoView({
+        behavior: 'smooth'
+    });
+};
+
 document.addEventListener('DOMContentLoaded', function () {
     // Get the span element
     var typedSpan = document.getElementById('typed');
@@ -32,7 +50,7 @@ function startTypingAnimation(spanElement, typedItems) {
             setTimeout(typeNextLetter, 100);
         } else {
             // Schedule erasing the current item after a delay (e.g., 1000 milliseconds)
-            setTimeout(eraseCurrentItem, 2000);
+            setTimeout(eraseCurrentItem, 1500);
         }
     }
 
@@ -72,3 +90,22 @@ window.addEventListener(scroll, function () {
 
     lastScrollTop = st;
 });
+
+const swipeList = document.getElementById('projectsSwipe');
+const totalProjects = swipeList.childElementCount;
+let currentProject = 1;
+
+const handlePrevList = () => {
+    currentIndex = (currentIndex - 1 + totalProjects) % totalProjects;
+    updateSwipeList();
+};
+
+const handleNextList = () => {
+    currentIndex = (currentIndex + 1) % totalProjects;
+    updateSwipeList();
+};
+
+const updateSwipeList = () => {
+    const newPosition = -currentIndex * 100 + '%';
+    swipeList.style.transform = `translateX(-${currentIndex * 100}%)`;
+};
