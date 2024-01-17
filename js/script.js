@@ -93,19 +93,23 @@ window.addEventListener(scroll, function () {
 
 const swipeList = document.getElementById('projectsSwipe');
 const totalProjects = swipeList.childElementCount;
-let currentProject = 1;
+let currentIndex = 0;
 
 const handlePrevList = () => {
-    currentIndex = (currentIndex - 1 + totalProjects) % totalProjects;
+    currentIndex = Math.max(currentIndex - 1, 0);
     updateSwipeList();
 };
 
 const handleNextList = () => {
-    currentIndex = (currentIndex + 1) % totalProjects;
+    currentIndex = Math.min(currentIndex + 1, totalProjects - 1);
     updateSwipeList();
 };
 
 const updateSwipeList = () => {
-    const newPosition = -currentIndex * 100 + '%';
-    swipeList.style.transform = `translateX(-${currentIndex * 100}%)`;
+    const itemWidth = 100 / totalProjects;
+    const newPosition = -currentIndex * itemWidth + '%';
+    swipeList.style.transform = `translateX(${newPosition})`;
 };
+
+// Initial setup
+updateSwipeList();
