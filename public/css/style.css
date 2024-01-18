@@ -30904,15 +30904,13 @@ body {
   font-size: 20px;
 }
 
-/* Header styles */
+.custom-text-shadow {
+  text-shadow: 5px 5px rgb(0, 0, 0);
+}
 
-/* .header h1 {
-    color: #0066cc;
-  } */
-
-/* .header p {
-    font-style: italic;
-  } */
+.text-shadow {
+  text-shadow: 3px 3px 2px rgb(0, 0, 0);
+}
 
 #typed {
   font-size: 30px;
