@@ -91,34 +91,42 @@ window.addEventListener(scroll, function () {
     lastScrollTop = st;
 });
 
-const swipeList = document.getElementById('projectsSwipe');
-const totalProjects = swipeList.childElementCount;
-let currentIndex = 0;
+document.addEventListener('DOMContentLoaded', function () {
+    const swipeList = document.getElementById('projectsSwipe');
+    const totalProjects = swipeList.childElementCount;
+    let currentIndex = 0;
+    
+    const handlePrevList = () => {
+        currentIndex = Math.max(currentIndex - 1, 0);
+        updateSwipeList();
+    };
+    
+    const handleNextList = () => {
+        currentIndex = Math.min(currentIndex + 1, totalProjects - 1);
+        updateSwipeList();
+    };
+    
+    const updateSwipeList = () => {
+        // Hide all list items
+        Array.from(swipeList.children).forEach(item => {
+            item.classList.add('hidden');
+        });
+    
+        // Display the current list item
+        swipeList.children[currentIndex].classList.remove('hidden');
 
-const handlePrevList = () => {
-    currentIndex = Math.max(currentIndex - 1, 0);
+        // Toggle visibility of arrows based on current index
+        const leftArrow = document.getElementById('leftArrow');
+        const rightArrow = document.getElementById('rightArrow');
+
+        leftArrow.style.display = currentIndex === 0 ? 'none' : 'block';
+        rightArrow.style.display = currentIndex === totalProjects - 1 ? 'none' : 'block';
+    };
+    
+    // Initial setup
     updateSwipeList();
-};
-
-const handleNextList = () => {
-    currentIndex = Math.min(currentIndex + 1, totalProjects - 1);
-    updateSwipeList();
-};
-
-const updateSwipeList = () => {
-    const itemWidth = swipeList.children[0].offsetWidth; // Width of each list item
-    const newMarginLeft = -currentIndex * itemWidth + 'px';
-
-    // Hide all list items
-    Array.from(swipeList.children).forEach(item => {
-        item.classList.add('hidden');
-    });
-
-    // Display the current list item
-    swipeList.children[currentIndex].classList.remove('hidden');
-
-    swipeList.style.marginLeft = newMarginLeft;
-};
-
-// Initial setup
-updateSwipeList();
+    
+    // Expose functions to the global scope
+    window.handlePrevList = handlePrevList;
+    window.handleNextList = handleNextList;
+});
