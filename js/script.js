@@ -106,9 +106,18 @@ const handleNextList = () => {
 };
 
 const updateSwipeList = () => {
-    const itemWidth = 100 / totalProjects;
-    const newPosition = -currentIndex * itemWidth + '%';
-    swipeList.style.transform = `translateX(${newPosition})`;
+    const itemWidth = swipeList.children[0].offsetWidth; // Width of each list item
+    const newMarginLeft = -currentIndex * itemWidth + 'px';
+
+    // Hide all list items
+    Array.from(swipeList.children).forEach(item => {
+        item.classList.add('hidden');
+    });
+
+    // Display the current list item
+    swipeList.children[currentIndex].classList.remove('hidden');
+
+    swipeList.style.marginLeft = newMarginLeft;
 };
 
 // Initial setup
