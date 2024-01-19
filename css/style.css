@@ -3,6 +3,12 @@
 @import 'tailwindcss/utilities';
 
 /* General styling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Additional styles for your page */
+
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
@@ -50,10 +56,25 @@ body {
     text-shadow: 3px 3px 2px rgb(0, 0, 0);
   }
 
+  .projects-text-shadow {
+    text-shadow: 1px 1px 2px rgb(196, 194, 194);
+  }
+
   #typed {
     font-size: 30px;
     font-weight: bold;
     color: #007bff; /* or any other color you prefer */
+  }
+
+  .text-gradient {
+    background: linear-gradient(to right, black, white);
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block;
+  }
+
+  .custom-bg-transition {
+    transition: background-color 0.5s ease-in-out;
   }
   
   /* About section styles */
