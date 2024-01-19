@@ -30989,6 +30989,50 @@ body {
   color: #333;
 }
 
+.image {
+  position: relative;
+  left: 0px;
+  width: 6rem;
+  height: 20rem;
+  border-radius: 1.2rem;
+  overflow: hidden;
+  transition: 0.4s ease-in-out;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.3);
+  flex: 0.25;
+}
+
+.image img {
+  /* position: relative; */
+  height: 20rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.image:hover {
+  flex: 3;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.image:nth-child(1) img {
+  left: -8rem;
+}
+
+.image:nth-child(2) img {
+  left: -6rem;
+}
+
+.image:nth-child(3) img {
+  left: -14rem;
+}
+
+.image:nth-child(4) img {
+  left: -8rem;
+}
+
 /* Services section styles */
 
 .Serivices {
