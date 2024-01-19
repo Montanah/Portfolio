@@ -191,3 +191,15 @@ body {
     padding: 10px;
   }
   
+/* Mobile */
+@media (max-width: 480px) {
+  .nav ul {
+    padding-top: 10px;
+    margin-right: 10px;
+  }
+
+  .nav a {
+    font-size: 10px;
+  }
+}
+  
