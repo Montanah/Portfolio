@@ -194,12 +194,133 @@ body {
 /* Mobile */
 @media (max-width: 480px) {
   .nav ul {
-    padding-top: 10px;
-    margin-right: 10px;
+    margin-right: 5px;
   }
 
   .nav a {
-    font-size: 10px;
+    font-size: 8px;
+  }
+
+  .sm\:text-8xl {
+    font-size: 4rem;
+    line-height: 1;
+  }
+
+  .text-7xl {
+    font-size: 2.3rem;
+    line-height: 1;
+}
+}
+
+/* Extra small devices */
+@media (min-width: 481px) and (max-width: 767px) {
+  .nav ul {
+    margin-right: 5px;
+  }
+
+  .text-black {
+    font-size: 8px;
+  }
+
+  .sm\:text-8xl {
+    font-size: 5rem;
+    line-height: 1;
+  }
+
+  .text-7xl {
+    font-size: 2.3rem;
+    line-height: 1;
+}
+}
+
+/* Small tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+  .nav ul {
+    margin-right: 10px;
+  }
+
+  .sm\:text-8xl {
+    font-size: 5rem;
+    line-height: 1;
+  }
+
+  .text-7xl {
+    font-size: 2.6rem;
+    line-height: 1;
+  }
+
+  .mt-20 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  #projectsSwipe .grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #dciP {
+    margin-top: 1rem;
+  }
+
+  #devP {
+    margin-top: 1rem;
+  }
+
+  #edaiP {
+    margin-top: 1rem;
+  }
+
+  .link {
+    font-size: 18px;
   }
 }
-  
+
+
+/* Large tablets and laptops */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .nav ul {
+    margin-right: 10px;
+  }
+
+  .sm\:text-8xl {
+    font-size: 5rem;
+    line-height: 1;
+  }
+
+  .text-7xl {
+    font-size: 2.6rem;
+    line-height: 1;
+  }
+
+  .mt-20 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  #projectsSwipe .grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #dciP {
+    margin-top: 1rem;
+  }
+
+  #devP {
+    margin-top: 1rem;
+  }
+
+  #edaiP {
+    margin-top: 1rem;
+  }
+
+  .link {
+    font-size: 18px;
+  }
+}
+
+/* Desktops and laptops */
+@media (min-width: 1200px) {
+
+}
