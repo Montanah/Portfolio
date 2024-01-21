@@ -197,25 +197,103 @@ body {
     margin-right: 5px;
   }
 
-  .nav a {
-    font-size: 8px;
+  .nav li {
+    font-size: 10px;
+  }
+
+  .bg-gray-900 {
+    font-size: 16px;
   }
 
   .sm\:text-8xl {
-    font-size: 4rem;
+    font-size: 2.6rem;
     line-height: 1;
   }
 
   .text-7xl {
-    font-size: 2.3rem;
+    font-size: 2.4rem;
     line-height: 1;
-}
+  }
+
+  .mt-20 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .text-4xl {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .gap-40 {
+    gap: 0;
+  }
+
+  .pb-5 {
+    padding-bottom: 0;
+  }
+
+  .text-2xl {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .about p {
+    font-size: 12px;
+  }
+
+  .exp {
+    font-size: 12px;
+  }
+
+  #projectsSwipe .grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #dciP {
+    margin-top: 1rem;
+  }
+
+  #devP {
+    margin-top: 1rem;
+  }
+
+  #edaiP {
+    margin-top: 1rem;
+  }
+
+  .link {
+    font-size: 18px;
+  }
+
+  .services {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .services p {
+    font-size: 12px;
+  }
 }
 
 /* Extra small devices */
 @media (min-width: 481px) and (max-width: 767px) {
   .nav ul {
     margin-right: 5px;
+  }
+
+  .nav li {
+    font-size: 10px;
+  }
+
+  .bg-gray-900 {
+    font-size: 16px;
   }
 
   .text-black {
@@ -228,9 +306,35 @@ body {
   }
 
   .text-7xl {
-    font-size: 2.3rem;
+    font-size: 2.4rem;
     line-height: 1;
-}
+  }
+
+  .mt-20 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  #projectsSwipe .grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #dciP {
+    margin-top: 1rem;
+  }
+
+  #devP {
+    margin-top: 1rem;
+  }
+
+  #edaiP {
+    margin-top: 1rem;
+  }
+
+  .link {
+    font-size: 18px;
+  }
 }
 
 /* Small tablets */
