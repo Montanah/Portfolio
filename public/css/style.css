@@ -31076,8 +31076,18 @@ body {
     font-size: 16px;
   }
 
+  /* .py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  } */
+
+  .px-10 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
   .sm\:text-8xl {
-    font-size: 2.6rem;
+    font-size: 2.5rem;
     line-height: 1;
   }
 
@@ -31166,6 +31176,11 @@ body {
 
   .bg-gray-900 {
     font-size: 16px;
+  }
+
+  .px-10 {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .text-black {
