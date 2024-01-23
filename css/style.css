@@ -454,6 +454,16 @@ body {
     font-size: 9px;
   }
 
+  #imagesSwipe {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #imagesSwipe .image {
+    width: 100%;
+    /* height: 100%; */
+  }
+
   #dciP {
     margin-top: 1rem;
   }
