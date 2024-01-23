@@ -319,7 +319,7 @@ body {
     margin-right: 0;
   }
 
-  p .link .mx-10 {
+  .link {
     font-size: 9px;
   }
 
@@ -345,9 +345,9 @@ body {
     margin-top: 1rem;
   }
 
-  .link {
+  /* .link {
     font-size: 18px;
-  }
+  } */
 
   .services {
     display: flex;
@@ -450,7 +450,7 @@ body {
     margin-right: 0;
   }
 
-  p .link .mx-10 {
+  .link {
     font-size: 9px;
   }
 
@@ -476,9 +476,9 @@ body {
     margin-top: 1rem;
   }
 
-  .link {
+  /* .link {
     font-size: 18px;
-  }
+  } */
 }
 
 /* Small tablets */
