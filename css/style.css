@@ -305,12 +305,12 @@ body {
   }
 
   #projectsSwipe .text-3xl {
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 1.2rem;
   }
 
   #projectsSwipe .text-2xl {
-    font-size: 1rem;
+    font-size: 12px;
     line-height: 1.2rem;
   }
 
@@ -322,6 +322,16 @@ body {
   p .link .mx-10 {
     font-size: 9px;
   }
+
+  #imagesSwipe {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #imagesSwipe .image {
+    width: 100%;
+    /* height: 100%; */
+  } 
 
   #dciP {
     margin-top: 1rem;
@@ -423,6 +433,25 @@ body {
   #projectsSwipe .mx-20 {
     margin-left: 2.3rem;
     margin-right: 2.3rem;
+  }
+
+  #projectsSwipe .text-3xl {
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
+
+  #projectsSwipe .text-2xl {
+    font-size: 12px;
+    line-height: 1.2rem;
+  }
+
+  #projectsSwipe .mx-10 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  p .link .mx-10 {
+    font-size: 9px;
   }
 
   #dciP {
