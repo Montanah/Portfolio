@@ -219,6 +219,10 @@ body {
     font-size: 16px;
   }
 
+  .text-shadow {
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+  }
+
   .py-1 {
     padding-top: 0;
     padding-bottom: 0;
@@ -285,9 +289,38 @@ body {
     font-size: 12px;
   }
 
+  .mx-20 {
+    /* margin-left: 5rem; */
+    /* margin-right: 5rem; */
+  }
+
   #projectsSwipe .grid {
     display: flex;
     flex-direction: column;
+  }
+
+  .mx-20 {
+    margin-left: 2.3rem;
+    margin-right: 2.3rem;
+  }
+
+  #projectsSwipe .text-3xl {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+  }
+
+  #projectsSwipe .text-2xl {
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
+
+  #projectsSwipe .mx-10 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  p .link .mx-10 {
+    font-size: 9px;
   }
 
   #dciP {
@@ -344,6 +377,10 @@ body {
     font-size: 16px;
   }
 
+  .text-shadow {
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+  }
+
   .py-1 {
     padding-top: 0;
     padding-bottom: 0;
@@ -378,9 +415,14 @@ body {
     margin-bottom: 2rem;
   }
 
-  #projectsSwipe .grid {
+  #projectsSwipe {
     display: flex;
     flex-direction: column;
+  }
+
+  #projectsSwipe .mx-20 {
+    margin-left: 2.3rem;
+    margin-right: 2.3rem;
   }
 
   #dciP {
