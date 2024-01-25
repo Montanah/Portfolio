@@ -131,6 +131,32 @@ document.addEventListener('DOMContentLoaded', function () {
     window.handleNextList = handleNextList;
 });
 
+function isElementInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  }
+  
+  // Function to handle the animation
+  function handleAnimation() {
+    const animatedElement = document.getElementById('animatedElement');
+  
+    if (isElementInViewport(animatedElement)) {
+      animatedElement.classList.add('animate-slideUp');
+    }
+  }
+  
+  // Use Intersection Observer to trigger the animation
+  const observer = new IntersectionObserver(handleAnimation);
+  observer.observe(document.getElementById('animatedElement'));
+  
+  // Trigger the animation on initial load
+  handleAnimation();
+
 document.addEventListener('DOMContentLoaded', function () {
     var swiper = new Swiper('.swiper-container', {
       slidesPerView: 1,

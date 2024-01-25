@@ -9910,55 +9910,20 @@ video {
   --tw-scale-y: 1.5;
 }
 
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes ping {
-  75%, 100% {
-    transform: scale(2);
+@keyframes slideUp {
+  from {
+    transform: translateY(-100%);
     opacity: 0;
   }
-}
 
-@keyframes pulse {
-  50% {
-    opacity: .5;
+  to {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
-@keyframes bounce {
-  0%, 100% {
-    transform: translateY(-25%);
-    animation-timing-function: cubic-bezier(0.8,0,1,1);
-  }
-
-  50% {
-    transform: none;
-    animation-timing-function: cubic-bezier(0,0,0.2,1);
-  }
-}
-
-.animate-none {
-  animation: none;
-}
-
-.animate-spin {
-  animation: spin 1s linear infinite;
-}
-
-.animate-ping {
-  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
-}
-
-.animate-pulse {
-  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-}
-
-.animate-bounce {
-  animation: bounce 1s infinite;
+.animate-slideUp {
+  animation: slideUp 1s ease-in-out;
 }
 
 .cursor-auto {
@@ -30864,6 +30829,30 @@ video {
 
 /* General styling */
 
+/* .skeleton-loader {
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.loader-row {
+  height: 20px;
+  margin-bottom: 10px;
+  background-image: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+} */
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+
+  100% {
+    background-position: 200% 0;
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -31204,6 +31193,12 @@ body {
     /* height: 100%; */
   }
 
+  .linkIcons {
+    width: 10px;
+    height: 10px;
+    margin-right: 2px;
+  }
+
   #dciP {
     margin-top: 1rem;
   }
@@ -31225,7 +31220,7 @@ body {
     flex-direction: column;
   }
 
-  .services p {
+  .services p, li {
     font-size: 12px;
   }
 }
@@ -40787,24 +40782,8 @@ body {
     --tw-scale-y: 1.5;
   }
 
-  .sm\:animate-none {
-    animation: none;
-  }
-
-  .sm\:animate-spin {
-    animation: spin 1s linear infinite;
-  }
-
-  .sm\:animate-ping {
-    animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
-  }
-
-  .sm\:animate-pulse {
-    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-  }
-
-  .sm\:animate-bounce {
-    animation: bounce 1s infinite;
+  .sm\:animate-slideUp {
+    animation: slideUp 1s ease-in-out;
   }
 
   .sm\:cursor-auto {
@@ -71037,24 +71016,8 @@ body {
     --tw-scale-y: 1.5;
   }
 
-  .md\:animate-none {
-    animation: none;
-  }
-
-  .md\:animate-spin {
-    animation: spin 1s linear infinite;
-  }
-
-  .md\:animate-ping {
-    animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
-  }
-
-  .md\:animate-pulse {
-    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-  }
-
-  .md\:animate-bounce {
-    animation: bounce 1s infinite;
+  .md\:animate-slideUp {
+    animation: slideUp 1s ease-in-out;
   }
 
   .md\:cursor-auto {
@@ -101287,24 +101250,8 @@ body {
     --tw-scale-y: 1.5;
   }
 
-  .lg\:animate-none {
-    animation: none;
-  }
-
-  .lg\:animate-spin {
-    animation: spin 1s linear infinite;
-  }
-
-  .lg\:animate-ping {
-    animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
-  }
-
-  .lg\:animate-pulse {
-    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-  }
-
-  .lg\:animate-bounce {
-    animation: bounce 1s infinite;
+  .lg\:animate-slideUp {
+    animation: slideUp 1s ease-in-out;
   }
 
   .lg\:cursor-auto {
@@ -131537,24 +131484,8 @@ body {
     --tw-scale-y: 1.5;
   }
 
-  .xl\:animate-none {
-    animation: none;
-  }
-
-  .xl\:animate-spin {
-    animation: spin 1s linear infinite;
-  }
-
-  .xl\:animate-ping {
-    animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
-  }
-
-  .xl\:animate-pulse {
-    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-  }
-
-  .xl\:animate-bounce {
-    animation: bounce 1s infinite;
+  .xl\:animate-slideUp {
+    animation: slideUp 1s ease-in-out;
   }
 
   .xl\:cursor-auto {
@@ -161787,24 +161718,8 @@ body {
     --tw-scale-y: 1.5;
   }
 
-  .\32xl\:animate-none {
-    animation: none;
-  }
-
-  .\32xl\:animate-spin {
-    animation: spin 1s linear infinite;
-  }
-
-  .\32xl\:animate-ping {
-    animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
-  }
-
-  .\32xl\:animate-pulse {
-    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-  }
-
-  .\32xl\:animate-bounce {
-    animation: bounce 1s infinite;
+  .\32xl\:animate-slideUp {
+    animation: slideUp 1s ease-in-out;
   }
 
   .\32xl\:cursor-auto {

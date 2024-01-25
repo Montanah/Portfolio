@@ -14,7 +14,7 @@
     <script src="js/script.js"></script>
 </head>
 <body class="">
-    <section id="top" class="bg-gradient-to-r from-blue-600 via-indigo-600 via-teal-400 to-gray-300 sticky w-full top-0 z-1">
+    <section id="top" class="bg-gradient-to-r from-blue-600 via-indigo-600 via-teal-400 to-gray-300 sticky w-full top-0 z-1 skeleton-loader">
         <section class="nav">
             <ul>
                <li onclick="navigateToSkills()" class="text-black hover:text-white font-bold sm:text-8 md:text-10 border-2 border-black py-1 px-3 hover:bg-blue-600 rounded-2xl cursor-pointer">Skills</li>
@@ -22,13 +22,13 @@
                 <li onclick="navigateToProjects()" class="text-black hover:text-white font-bold sm:text-8 md:text-10 border-2 border-black py-1 px-3 hover:bg-blue-600 rounded-2xl cursor-pointer">Projects</li>
             </ul>
         </section>
-        <section class="lpage mx-10 grid grid-cols-3">
+        <section class="lpage mx-10 grid grid-cols-3 skeleton-loader">
             <aside class="col-span-2">
-                <h1 class="pt-40 text-8xl sm:text-8xl md:text-10xl font-bold text-white tracking-tight custom-text-shadow">
+                <h1 class="pt-40 text-8xl sm:text-8xl md:text-10xl font-bold text-white tracking-tight custom-text-shadow loader-row">
                     Mititi Isaac
                   </h1>                  
                 <div>
-                    <p class="text-7xl font-bold tracking-tighter text-shadow">
+                    <p class="text-7xl font-bold tracking-tighter text-shadow loader-row">
                         I am a 
                         <span id="typed" data-typed-items="Software Engineer, Frontend Developer, Backend Developer, Graphic Designer, Social Media Manager">
                         Software Engineer
@@ -36,7 +36,7 @@
                     </p>
                 </div>
                 <div>
-                <button type="button" onclick="navigateToContact()" class="bg-gray-900 mt-20 text-2xl hover:bg-blue-700  border-2 border-black hover:border-2 hover:border-black text-white font-bold py-4 px-10 rounded-full cursor-pointer">
+                <button type="button" onclick="navigateToContact()" class="bg-gray-900 mt-20 text-2xl hover:bg-blue-700 border-2 border-black hover:border-2 hover:border-black text-white font-bold py-4 px-10 rounded-full cursor-pointer loader-row">
                     Work With Me
                 </button>
             </div>                  
@@ -46,11 +46,11 @@
             </aside>
         </section>
     </section>
-    <section id="bottom" class="bg-black relative mt-160">
-        <section class="about px-10 grid gap-40 grid-cols-2">
+    <section id="bottom" class="bg-black relative mt-160 skeleton-loader">
+        <section class="about px-10 grid gap-40 grid-cols-2 animate-slideUp" id="animatedElement">
             <span>
-                <h1 class="pt-10 pb-5 text-4xl text-blue-400">About</h1>
-                <p class="text-gray-400">Welcome to my digital space! I am a versatile professional with a passion for crafting exceptional digital experiences. As a Software Engineer, I seamlessly navigate the realms of frontend and backend development, bringing ideas to life through code. My design flair extends beyond development – I am a skilled Graphic Designer, shaping visual narratives that captivate and inspire. As a Social Media Manager, I leverage creativity and strategy to build engaging online presences. This multidisciplinary approach allows me to seamlessly merge technology, design, and communication, ensuring each project is a harmonious blend of innovation and aesthetics. Explore my portfolio to witness the convergence of my diverse skills into cohesive and impactful digital solutions.</p>
+                <h1 class="pt-10 pb-5 text-4xl text-blue-400 animate">About</h1>
+                <p class="text-gray-400 loader-row">Welcome to my digital space! I am a versatile professional with a passion for crafting exceptional digital experiences. As a Software Engineer, I seamlessly navigate the realms of frontend and backend development, bringing ideas to life through code. My design flair extends beyond development – I am a skilled Graphic Designer, shaping visual narratives that captivate and inspire. As a Social Media Manager, I leverage creativity and strategy to build engaging online presences. This multidisciplinary approach allows me to seamlessly merge technology, design, and communication, ensuring each project is a harmonious blend of innovation and aesthetics. Explore my portfolio to witness the convergence of my diverse skills into cohesive and impactful digital solutions.</p>
             </span>
             <span>
                 <h2 class="pt-10 pb-5 text-4xl text-blue-400">Personal Information</h2>
@@ -86,16 +86,16 @@
                 </span>
             </span>
         </section>
-        <section id="skills" class="m-10">
+        <section id="skills" class="m-10 skeleton-loader">
             <h1 class="text-4xl text-blue-400 pb-5">Skills</h1>
-            <p class="text-2xl text-gray-400">JavaScript, React, HTML, CSS, Tailwind CSS, REST API, NodeJS, ExpressJS, MongoDB, MySQL, Redis, Python, Flask, SQLAlchemy, Mocha, Chai, Unittest, Webpack, Nginx</p>
+            <p class="text-2xl text-gray-400 loader-row">JavaScript, React, HTML, CSS, Tailwind CSS, REST API, NodeJS, ExpressJS, MongoDB, MySQL, Redis, Python, Flask, SQLAlchemy, Mocha, Chai, Unittest, Webpack, Nginx</p>
         </section>
-        <section id="experience" class="m-10">
+        <section id="experience" class="m-10 skeleton-loader">
             <h1 class="text-4xl text-blue-400 pb-5">Experience</h1>
             <h3 class="text-2xl text-purple-500">Web Developer, Graphic Designer & Social Media Manager</h3>
             <p>Deliverance Church Int'l - Nyansiongo, Kisii, Kenya</p>
             <span class="text-gray-400">
-                <p class="exp">January 2020 to Present</p>
+                <p class="exp loader-row">January 2020 to Present</p>
                     <ul class="list-disc ml-5">
                         <li class="exp">Developed the organisation’s website and frequently update it.</li>
                         <li class="exp">Designing engaging and interactive digital content to captivate viewers, using Figma, Adobe and Canva.</li>
@@ -104,17 +104,24 @@
                     </ul>
             </span>
         </section>
-        <section id="projects" class="m-10">
+        <section id="projects" class="m-10 skeleton-loader">
             <h1 class="text-4xl text-blue-400 pb-5">Projects</h1>
             <div class="relative overflow-hidden mt-5">
                 <ul id="projectsSwipe" class="transition-transform ease-in-out duration-300 mx-20">
                     <li class="bg-gradient-to-r from-blue-600 via-blue-500 to-purple-600 rounded-md p-5 mb-5 w-full">
                         <h3 class="text-3xl text-black text-center font-bold projects-text-shadow">Deliverance Church International Nyansiongo Website</h3>
-                        <div class="mt-5 grid grid-cols-2">
+                        <div class="mt-5 grid grid-cols-2 loader-row">
                             <img src="Images/Deliverance Church Website Screenshot.png" alt="DCI_Nyansiongo_Website" class="w-full h-auto">
                             <span>
                                 <p id="dciP" class="text-gray-400 mx-10 mb-5 text-2xl">I built the website for the organisation I currently work with using HTML, CSS and Vanilla Javascript. I also worked with Google Map API to embed the map location of the church on the website. Completed and deployed in January 2024.</p>
-                                <p class="link mx-10">Project Link: <a href="https://www.deliverancechurchinternationalnyansiongo.org" target="_blank" rel="noopener">www.deliverancechurchinternationalnyansiongo.org</a> <br> GitHub Repo Link: <a href="https://github.com/Montanah/DCI-Nyansiongo-Website" target="_blank" rel="noopener">DCI-Nyansiongo-Website</a></p>
+                                <p class="link mx-10">
+                                    <span class="flex flex-row">
+                                        <img src="Images/www_icon.svg" alt="wwww Icon" class="w-6 h-6 mr-2 linkIcons">Project Link: <a href="https://www.deliverancechurchinternationalnyansiongo.org" target="_blank" rel="noopener">www.deliverancechurchinternationalnyansiongo.org</a> <br>
+                                    </span> 
+                                    <span class="flex flex-row">
+                                        <img src="Images/github_icon2.svg" alt="GitHubIcon" class="w-6 h-6 mr-2 linkIcons"> GitHub Repo Link: <a href="https://github.com/Montanah/DCI-Nyansiongo-Website" target="_blank" rel="noopener">DCI-Nyansiongo-Website</a>
+                                    </span>
+                                </p>
                             </span>
                         </div>
                     </li>
@@ -124,7 +131,14 @@
                             <img src="Images/DevPort Logo.png" alt="Devport" class="w-3/4 h-auto justify-center items-center">
                             <span>
                                 <p id="devP" class="text-gray-400 mx-10 mb-5 text-2xl">DevPort is a user-friendly fullstack web app for developers to showcase skills, education, and projects. With seamless GitHub integration, it streamlines sign-up and populates profiles effortlessly. Users can personalize their portfolios for a visually compelling presentation of their work. I was the Frontend Engineer for the project; making use of HTML, CSS, JavaScript, React.js, Node.js, Nginx, Webpack. Completed and deployed in November 2023.</p>
-                                <p class="link mx-10">Project Link: <a href="http://devport.edwardiniko.tech" target="_blank" rel="noopener">Devport</a> <br> GitHub Repo Link: <a href="https://github.com/Montanah/DevPort" target="_blank" rel="noopener">Devport</a></p>
+                                <p class="link mx-10">
+                                    <span class="flex flex-row">
+                                        <img src="Images/www_icon.svg" alt="wwww Icon" class="w-6 h-6 mr-2 linkIcons">Project Link: <a href="http://devport.edwardiniko.tech" target="_blank" rel="noopener">Devport</a> <br>
+                                    </span>
+                                    <span class="flex flex-row">
+                                        <img src="Images/github_icon2.svg" alt="GitHubIcon" class="w-6 h-6 mr-2 linkIcons"> GitHub Repo Link: <a href="https://github.com/Montanah/DevPort" target="_blank" rel="noopener">Devport</a>
+                                    </span>
+                                </p>
                             </span>
                         </div>
                     </li>
@@ -147,7 +161,14 @@
                             </ul>                           
                             <span>
                                 <p id="edaiP" class="text-gray-400 mx-10 mb-5 text-2xl">Was part of a team that designed and developed EdAI, a responsive AI-supported education web application using HTML, CSS, JavaScript, React.js, and Node.js. Implemented responsive design and optimized performance for an enhanced user experience. Completed and deployed in July 2023.</p>
-                                <p class="link mx-10">Project Link: <a href="http://edai.popeh.tech" target="_blank" rel="noopener">edai.popeh.tech</a> <br> GitHub Repo Link: <a href="https://github.com/Montanah/EdAI" target="_blank" rel="noopener">EdAI</a></p>
+                                <p class="link mx-10">
+                                    <span class="flex flex-row">
+                                        <img src="Images/www_icon.svg" alt="wwww Icon" class="w-6 h-6 mr-2 linkIcons">Project Link: <a href="http://edai.popeh.tech" target="_blank" rel="noopener">edai.popeh.tech</a> <br>
+                                    </span>
+                                    <span class="flex flex-row">
+                                        <img src="Images/github_icon2.svg" alt="GitHubIcon" class="w-6 h-6 mr-2 linkIcons">GitHub Repo Link: <a href="https://github.com/Montanah/EdAI" target="_blank" rel="noopener">EdAI</a>
+                                    </span>
+                                </p>
                             </span>
                         </div>                        
                     </li>
@@ -155,15 +176,22 @@
                         <h3 class="text-3xl text-black text-center font-bold projects-text-shadow">AirBnB Clone</h3>
                         <div class="mt-5">
                             <p class="text-gray-400 mx-10 mb-5 text-2xl">Was part of a team that built an AirBnB clone as one of our school projects. Completed in June 2023.</p>
-                            <p class="link mx-10">Project GitHub Link: <a href="https://github.com/Montanah/AirBnB_clone_v4" target="_blank" rel="noopener">AirBnB_clone_v4</a></p>
+                            <p class="link mx-10">
+                                <span class="flex flex-row">
+                                    <img src="Images/github_icon2.svg" alt="GitHubIcon" class="w-6 h-6 mr-2 linkIcons">Project GitHub Link: <a href="https://github.com/Montanah/AirBnB_clone_v4" target="_blank" rel="noopener">AirBnB_clone_v4</a>
+                                </span>
+                            </p>
                         </div>
                     </li>
                     <li class="bg-gradient-to-r from-blue-600 via-blue-500 to-purple-600 rounded-md p-5 mb-5 w-full hidden">
                         <h3 class="text-3xl text-black text-center font-bold projects-text-shadow">Graphic Design Work</h3>
                         <div class="mt-5">
                             <p class="text-gray-400 mx-10 mb-5 text-2xl">Here's a link to some of the graphic design work i've done for my clients, some inclusive of social media management. I work with some clients on a retainer basis, some projects are ongoing.</p>
-                            <p class="link mx-10">Graphic Design Work Link:
-                                <a href="https://mititiisaac.wixsite.com/iomititi" target="_blank" rel="noopener">https://mititiisaac.wixsite.com/iomititi</a>
+                            <p class="link mx-10">
+                                <span class="flex flex-row">
+                                    <img src="Images/www_icon.svg" alt="wwww Icon" class="w-6 h-6 mr-2 linkIcons">Link: 
+                                    <a href="https://mititiisaac.wixsite.com/iomititi" target="_blank" rel="noopener">https://mititiisaac.wixsite.com/iomititi</a>
+                                </span>
                             </p>
                         </div>
                     </li>
@@ -180,24 +208,76 @@
                 </div>
             </div>
         </section>
-        <section class="mt-10 mx-10">
+        <section class="mt-10 mx-10 skeleton-loader">
             <h1 class="text-4xl text-blue-400 pb-5">Services</h1>
             <div class="services grid gap-10 grid-cols-2 grid-rows-3">
                 <span>
                     <h4 class="text-2xl text-purple-500">Frontend Development</h4>
-                    <p class="text-gray-400">As a seasoned Frontend Developer, I specialize in creating visually stunning and user-friendly websites that adapt seamlessly across various devices. My services include responsive web design, intuitive user interface development, and a strong focus on cross-browser compatibility for consistent performance. I excel in optimizing web performance to ensure swift loading times, collaborating closely with design teams, and maintaining codebases through effective refactoring. Additionally, I integrate APIs to enhance website functionality, prioritize accessibility compliance, and stay updated on the latest frontend technologies. My commitment lies in delivering dynamic and innovative web solutions that surpass user expectations while aligning with project goals. I achieve this using HTML, CSS, JavaScript, ReactJS, REST API consumption, Nginx, Tailwind CSS.</p>
+                    <p class="text-gray-400 loader-row">Experienced Frontend Developer specializing in:</p>
+                    <ul class="text-gray-400 loader-row list-disc ml-5">
+                        <li>Creating visually stunning and user-friendly websites</li>
+                        <li>Responsive web design and intuitive user interface development</li>
+                        <li>Cross-browser compatibility and web performance optimization</li>
+                        <li>Collaboration with design teams and codebase maintenance</li>
+                        <li>Integration of APIs for enhanced functionality</li>
+                        <li>Prioritization of accessibility compliance</li>
+                        <li>Staying updated on frontend technologies</li>
+                      </ul>
+                      <p class="text-gray-400 loader-row">Proficient in HTML, CSS, JavaScript, ReactJS, REST API consumption, Nginx, and Tailwind CSS.</p>
                 </span>
                 <span>
                     <h4 class="text-2xl text-purple-500">Backend Development</h4>
-                    <p class="text-gray-400">As a seasoned Backend Developer, I specialize in crafting robust server-side solutions that underpin the seamless functionality of web applications. Proficient in languages such as Node.js and Python, I leverage frameworks like Express.js and Django to streamline backend logic development. My expertise extends to proficiently managing databases, including both relational and NoSQL databases. With a focus on API development, I design and implement RESTful APIs, ensuring smooth communication between frontend and backend systems. I am adept at server management tools like Nginx and prioritize the implementation of secure authentication and authorization protocols. Proficient in version control using Git, I foster collaborative development and efficient code management. Embracing microservices architecture, I design scalable and modular backend systems, incorporating thorough testing processes and automation through CI/CD pipelines for reliability. My commitment is centered on delivering scalable, efficient, and secure backend solutions that exceed project objectives and contribute to the overall success of web applications.</p>
+                    <p class="text-gray-400">Experienced Backend Developer specializing in:</p>
+                    <ul class="text-gray-400 list-disc ml-5">
+                      <li>Crafting robust server-side solutions for web applications</li>
+                      <li>Proficiency in Node.js and Python</li>
+                      <li>Utilizing frameworks like Express.js and Django for backend logic</li>
+                      <li>Managing relational and NoSQL databases</li>
+                      <li>Designing and implementing RESTful APIs</li>
+                      <li>Ensuring smooth communication between frontend and backend</li>
+                      <li>Server management using tools like Nginx</li>
+                      <li>Implementing secure authentication and authorization</li>
+                      <li>Version control with Git for collaborative development</li>
+                      <li>Embracing microservices architecture for scalability</li>
+                      <li>Designing scalable and modular backend systems</li>
+                      <li>Thorough testing and automation through CI/CD pipelines</li>
+                    </ul>
+                    <p class="text-gray-400">Proficient in version control using Git, I foster collaborative development and efficient code management.</p>
+                    <p class="text-gray-400">My commitment is centered on delivering scalable, efficient, and secure backend solutions that exceed project objectives and contribute to the overall success of web applications.</p>
                 </span>
                 <span>
                     <h4 class="text-2xl text-purple-500">Graphic Design</h4>
-                    <p class="text-gray-400">As a Graphic Designer, I leverage my creativity and proficiency in design tools, including Adobe Creative Suite and Figma, to bring concepts to life through visually stunning graphics. With expertise in Figma, a collaborative design platform, I streamline the design process, allowing for efficient collaboration and iteration. Whether working on branding, marketing collateral, or other design projects, I maintain a keen eye for aesthetics, layout, and color theory. My meticulous approach ensures pixel-perfect designs and cohesive visual identities. Collaborating closely with clients and teams, I translate ideas into impactful visuals that align with brand guidelines and project objectives. My commitment is to deliver visually striking designs that make a lasting impression and elevate the overall visual appeal of any project.</p>
+                    <p class="text-gray-400">Graphic Designer with a focus on:</p>
+                    <ul class="text-gray-400 list-disc ml-5">
+                      <li>Utilizing creativity and proficiency in design tools, including Adobe Creative Suite and Figma</li>
+                      <li>Bringing concepts to life through visually stunning graphics</li>
+                      <li>Expertise in Figma for efficient collaboration and iteration</li>
+                      <li>Maintaining a keen eye for aesthetics, layout, and color theory</li>
+                      <li>Working on branding, marketing collateral, and other design projects</li>
+                      <li>Ensuring pixel-perfect designs and cohesive visual identities</li>
+                      <li>Collaborating closely with clients and teams</li>
+                      <li>Translating ideas into impactful visuals aligned with brand guidelines</li>
+                      <li>Commitment to delivering visually striking designs</li>
+                    </ul>
+                    <p class="text-gray-400">My commitment is to deliver visually striking designs that make a lasting impression and elevate the overall visual appeal of any project.</p>
                 </span>
                 <span>
                     <h4 class="text-2xl text-purple-500">Social Media Management</h4>
-                    <p class="text-gray-400">As a seasoned Social Media Manager, I excel in crafting and implementing strategic social media plans across platforms like Instagram, Twitter, Facebook, and LinkedIn. My expertise lies in creating engaging content, combining compelling copywriting with eye-catching visuals to ensure consistent and impactful messaging. I leverage analytics tools to refine strategies based on performance metrics, maximizing engagement and brand visibility. Whether curating content calendars, managing campaigns, or fostering community engagement, I stay current with industry trends to keep brands at the forefront of the digital landscape. My commitment is to deliver results-driven social media initiatives that forge meaningful connections, elevate brand awareness, and contribute to overall business success.</p>
+                    <p class="text-gray-400">Social Media Manager specializing in:</p>
+                    <ul class="text-gray-400 list-disc ml-5">
+                      <li>Crafting and implementing strategic social media plans</li>
+                      <li>Platforms: Instagram, Twitter, Facebook, LinkedIn</li>
+                      <li>Creating engaging content with compelling copywriting and eye-catching visuals</li>
+                      <li>Ensuring consistent and impactful messaging</li>
+                      <li>Leveraging analytics tools to refine strategies based on performance metrics</li>
+                      <li>Maximizing engagement and brand visibility</li>
+                      <li>Curating content calendars and managing campaigns</li>
+                      <li>Fostering community engagement</li>
+                      <li>Staying current with industry trends</li>
+                      <li>Delivering results-driven social media initiatives</li>
+                      <li>Forging meaningful connections and elevating brand awareness</li>
+                    </ul>
+                    <p class="text-gray-400">My commitment is to deliver results-driven social media initiatives that forge meaningful connections, elevate brand awareness, and contribute to overall business success.</p>
                 </span>
                 <span>
                     <h4 class="text-2xl text-purple-500">Fullstack Development</h4>
@@ -205,9 +285,9 @@
                 </span>
             </div>
         </section>
-        <section id="footer">
+        <section id="footer" class="skeleton-loader">
             <h1 class="text-4xl text-slate-400">Contact</h1>
-            <p class="block">
+            <p class="block loader-row">
                 <span class="inline-flex items-center">
                     <img src="Images/phone_icon.svg" alt="PhoneIcon" class="w-6 h-6 mr-2"> +254 737 336 511
                 </span>
@@ -226,7 +306,7 @@
             </p>
             <p class="block">
                 <span class="inline-flex items-center">
-                    <img src="Images/github_icon.svg" alt="GitHubIcon" class="w-6 h-6 mr-2">
+                    <img src="Images/github_icon2.svg" alt="GitHubIcon" class="w-6 h-6 mr-2">
                     <a href="https://github.com/Montanah/" target="_blank" rel="noopener">Montanah</a>
                 </span>
             </p>
@@ -236,7 +316,7 @@
                     <a href="https://twitter.com/IO_Mititi" target="_blank" rel="noopener">@IO_Mititi</a>
                 </span>
             </p>
-            <p>Mititi Isaac &copy;  2024 | All Rights Reserved</p>
+            <p>&copy; 2024 Mititi Isaac. All Rights Reserved.</p>
         </section>    
     </section>
 </body>

@@ -10,6 +10,21 @@ module.exports = {
         'xl': '1280px',
       },
     },
+    keyframes: {
+      slideUp: {
+        from: {
+          transform: 'translateY(-100%)',
+          opacity: 0,
+        },
+        to: {
+          transform: 'translateY(0)',
+          opacity: 1,
+        },
+      },
+    },
+    animation: {
+      slideUp: 'slideUp 1s ease-in-out',
+    },
   },
   variants: {
     extend: {},
