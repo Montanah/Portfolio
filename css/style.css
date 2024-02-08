@@ -346,6 +346,21 @@ body {
     font-size: 9px;
   }
 
+  #dciPLink {
+    flex-direction: column; /* Change flex direction to column for smaller screens */
+  }
+
+  #dciPLink a::after {
+    content: "\A"; /* Using "\A" for a line break after the link */
+    white-space: pre;
+  }
+
+  .mx-10 #dciPLink
+   {
+  margin-right: 1px;
+  font-size: 8.5px;
+  }
+
   #imagesSwipe {
     display: flex;
     flex-direction: column;
