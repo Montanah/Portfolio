@@ -499,7 +499,7 @@ body {
   }
 
   #dciPLink {
-    flex-direction: column; /* Change flex direction to column for smaller screens */
+    flex-direction: column;
   }
 
   #dciPLink a::after {
