@@ -30928,11 +30928,6 @@ body {
   transition: background-color 0.5s ease-in-out;
 }
 
-#lazy-content {
-  opacity: 0; /* Initially set opacity to 0, content will be hidden */
-  transition: opacity 0.5s ease; /* Add a transition for a smooth fade-in effect */
-}
-
 /* About section styles */
 
 .About {
@@ -31339,6 +31334,21 @@ body {
 
   .link {
     font-size: 9px;
+  }
+
+  #dciPLink {
+    flex-direction: column; /* Change flex direction to column for smaller screens */
+  }
+
+  #dciPLink a::after {
+    content: "\A"; /* Using "\A" for a line break after the link */
+    white-space: pre;
+  }
+
+  .mx-10 #dciPLink
+   {
+    margin-right: 1px;
+    font-size: 8.5px;
   }
 
   #imagesSwipe {
