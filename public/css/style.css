@@ -31358,6 +31358,9 @@ body {
   #imagesSwipe {
     display: flex;
     flex-direction: column;
+    .image:not(:first-child) {
+      display: none;
+    }
   }
 
   #imagesSwipe .image {
