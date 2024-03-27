@@ -167,3 +167,30 @@ document.addEventListener('DOMContentLoaded', function () {
       },
     });
   });
+
+  // Get reference to the images container
+  const imagesSwipe = document.getElementById('imagesSwipe');
+
+  // Initialize Hammer.js on the images container
+    const hammer = new Hammer(imagesSwipe);
+
+// Listen for swipe events on the images container
+hammer.on('swipeleft', function () {
+    // handle swipe left (show next image)
+    const currentImage = document.querySelector('.image:not(.hidden)');
+    const nextImage = currentImage.nextElementSibling;
+    if (nextImage) {
+        currentImage.classList.add('hidden');
+        nextImage.classList.remove('hidden');
+    }
+});
+
+hammer.on('swiperight', function () {
+    // handle swipe right (show previous image)
+    const currentImage = document.querySelector('.image:not(.hidden)');
+    const previousImage = currentImage.previousElementSibling;
+    if (previousImage) {
+        currentImage.classList.add('hidden');
+        previousImage.classList.remove('hidden');
+    }
+});

@@ -31050,6 +31050,8 @@ body {
   padding: 10px;
 }
 
+/* Media queries */
+
 /* Mobile */
 
 @media (max-width: 480px) {
@@ -31201,6 +31203,9 @@ body {
   #imagesSwipe {
     display: flex;
     flex-direction: column;
+    .image:not(:first-child) {
+      display: none;
+    }
   }
 
   /* .image:not(:first-child) {
@@ -31396,7 +31401,7 @@ body {
   }
 
   .text-7xl {
-    font-size: 2.6rem;
+    font-size: 2.3rem;
     line-height: 1;
   }
 
@@ -31424,6 +31429,10 @@ body {
 
   .link {
     font-size: 18px;
+  }
+
+  p, li {
+    font-size: 12px;
   }
 }
 
@@ -53210,7 +53219,7 @@ body {
   }
 
   .sm\:text-8xl {
-    font-size: 6rem;
+    font-size: 5rem;
     line-height: 1;
   }
 
