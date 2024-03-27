@@ -31208,14 +31208,8 @@ body {
     }
   }
 
-  /* .image:not(:first-child) {
-    display: none;
-  } */
-
   #imagesSwipe .image {
-    /* display: block; */
     width: 100%;
-    /* height: 100%; */
   }
 
   .linkIcons {
