@@ -168,11 +168,11 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  // Get reference to the images container
-  const imagesSwipe = document.getElementById('imagesSwipe');
+// Get reference to the images container
+const imagesSwipe = document.getElementById('imagesSwipe');
 
-  // Initialize Hammer.js on the images container
-    const hammer = new Hammer(imagesSwipe);
+// Initialize Hammer.js on the images container
+const hammer = new Hammer(imagesSwipe);
 
 // Listen for swipe events on the images container
 hammer.on('swipeleft', function () {
