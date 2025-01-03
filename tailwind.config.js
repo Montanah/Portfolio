@@ -9,9 +9,9 @@ module.exports = {
         'lg': '1024px',
         'xl': '1280px',
       },
-      fontFamily: {
-        'cookie-regular': ['Cookie', 'cursive'],
-      },
+      // fontFamily: {
+      //   'cookie-regular': ['Cookie', 'cursive'],
+      // },
     },
     keyframes: {
       slideUp: {
