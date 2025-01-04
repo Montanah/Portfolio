@@ -53194,8 +53194,8 @@ body {
   }
 
   .sm\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
+    font-size: 1rem;
+    line-height: 1.5;
   }
 
   .sm\:text-3xl {
@@ -53219,12 +53219,12 @@ body {
   }
 
   .sm\:text-7xl {
-    font-size: 4.5rem;
+    font-size: 1.4rem;
     line-height: 1;
   }
 
   .sm\:text-8xl {
-    font-size: 6rem;
+    font-size: 2.5rem;
     line-height: 1;
   }
 
