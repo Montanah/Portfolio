@@ -12,6 +12,12 @@ module.exports = {
       fontFamily: {
         'cookie-regular': ['Cookie', 'cursive'],
       },
+      fontSize: {
+        '7xl': ['1.4rem', { lineHeight: '1' }],
+        '8xl': ['2.5rem', { lineHeight: '1' }],
+        'sm-7xl': ['4.5rem', { lineHeight: '1' }],
+        'sm-8xl': ['6rem', { lineHeight: '1' }],
+      },
     },
     keyframes: {
       slideUp: {

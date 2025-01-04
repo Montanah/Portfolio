@@ -22314,17 +22314,27 @@ video {
 }
 
 .text-7xl {
-  font-size: 4.5rem;
+  font-size: 1.4rem;
   line-height: 1;
 }
 
 .text-8xl {
-  font-size: 6rem;
+  font-size: 2.5rem;
   line-height: 1;
 }
 
 .text-9xl {
   font-size: 8rem;
+  line-height: 1;
+}
+
+.text-sm-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
+.text-sm-8xl {
+  font-size: 6rem;
   line-height: 1;
 }
 
@@ -53194,8 +53204,8 @@ body {
   }
 
   .sm\:text-2xl {
-    font-size: 1rem;
-    line-height: 1.5;
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .sm\:text-3xl {
@@ -53230,6 +53240,16 @@ body {
 
   .sm\:text-9xl {
     font-size: 8rem;
+    line-height: 1;
+  }
+
+  .sm\:text-sm-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+
+  .sm\:text-sm-8xl {
+    font-size: 6rem;
     line-height: 1;
   }
 
@@ -83457,17 +83477,27 @@ body {
   }
 
   .md\:text-7xl {
-    font-size: 4.5rem;
+    font-size: 1.4rem;
     line-height: 1;
   }
 
   .md\:text-8xl {
-    font-size: 6rem;
+    font-size: 2.5rem;
     line-height: 1;
   }
 
   .md\:text-9xl {
     font-size: 8rem;
+    line-height: 1;
+  }
+
+  .md\:text-sm-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+
+  .md\:text-sm-8xl {
+    font-size: 6rem;
     line-height: 1;
   }
 
@@ -113695,17 +113725,27 @@ body {
   }
 
   .lg\:text-7xl {
-    font-size: 4.5rem;
+    font-size: 1.4rem;
     line-height: 1;
   }
 
   .lg\:text-8xl {
-    font-size: 6rem;
+    font-size: 2.5rem;
     line-height: 1;
   }
 
   .lg\:text-9xl {
     font-size: 8rem;
+    line-height: 1;
+  }
+
+  .lg\:text-sm-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+
+  .lg\:text-sm-8xl {
+    font-size: 6rem;
     line-height: 1;
   }
 
@@ -143933,17 +143973,27 @@ body {
   }
 
   .xl\:text-7xl {
-    font-size: 4.5rem;
+    font-size: 1.4rem;
     line-height: 1;
   }
 
   .xl\:text-8xl {
-    font-size: 6rem;
+    font-size: 2.5rem;
     line-height: 1;
   }
 
   .xl\:text-9xl {
     font-size: 8rem;
+    line-height: 1;
+  }
+
+  .xl\:text-sm-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+
+  .xl\:text-sm-8xl {
+    font-size: 6rem;
     line-height: 1;
   }
 
@@ -174171,17 +174221,27 @@ body {
   }
 
   .\32xl\:text-7xl {
-    font-size: 4.5rem;
+    font-size: 1.4rem;
     line-height: 1;
   }
 
   .\32xl\:text-8xl {
-    font-size: 6rem;
+    font-size: 2.5rem;
     line-height: 1;
   }
 
   .\32xl\:text-9xl {
     font-size: 8rem;
+    line-height: 1;
+  }
+
+  .\32xl\:text-sm-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+
+  .\32xl\:text-sm-8xl {
+    font-size: 6rem;
     line-height: 1;
   }
 
