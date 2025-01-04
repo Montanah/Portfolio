@@ -22259,6 +22259,10 @@ video {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
+.font-cookie-regular {
+  font-family: Cookie, cursive;
+}
+
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
@@ -53160,6 +53164,10 @@ body {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .sm\:font-cookie-regular {
+    font-family: Cookie, cursive;
+  }
+
   .sm\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
@@ -83392,6 +83400,10 @@ body {
 
   .md\:font-mono {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  .md\:font-cookie-regular {
+    font-family: Cookie, cursive;
   }
 
   .md\:text-xs {
@@ -113628,6 +113640,10 @@ body {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .lg\:font-cookie-regular {
+    font-family: Cookie, cursive;
+  }
+
   .lg\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
@@ -143862,6 +143878,10 @@ body {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .xl\:font-cookie-regular {
+    font-family: Cookie, cursive;
+  }
+
   .xl\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
@@ -174094,6 +174114,10 @@ body {
 
   .\32xl\:font-mono {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  .\32xl\:font-cookie-regular {
+    font-family: Cookie, cursive;
   }
 
   .\32xl\:text-xs {
