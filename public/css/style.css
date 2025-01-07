@@ -31095,6 +31095,10 @@ body {
     font-size: 16px;
   }
 
+  .col-span-2 {
+    grid-column: span 1;
+  }
+
   .items-center {
     display: block;
   }
