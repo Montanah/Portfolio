@@ -31095,6 +31095,10 @@ body {
     font-size: 16px;
   }
 
+  .items-center {
+    display: block;
+  }
+
   .text-shadow {
     text-shadow: 2px 2px 2px rgb(0, 0, 0);
   }
