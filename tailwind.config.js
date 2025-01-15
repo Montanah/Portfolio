@@ -1,6 +1,9 @@
 module.exports = {
-  purge: [],
-  darkMode: false, // or 'media' or 'class'
+  content: [
+    './index.html',
+    './js/script.js',
+  ],
+  // darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
       screens: {
