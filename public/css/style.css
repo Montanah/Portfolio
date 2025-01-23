@@ -1519,6 +1519,10 @@ body {
     display: flex;
   }
 
+  .sm\:flex-col {
+    flex-direction: column;
+  }
+
   .sm\:text-8xl {
     font-size: 2.5rem;
     line-height: 1;
