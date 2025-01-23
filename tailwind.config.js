@@ -8,10 +8,10 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        'sm': '480px',
-        'md': '768px',
-        'lg': '1024px',
-        'xl': '1280px',
+        'max-sm': { max: '480px' }, // Defines a max-width breakpoint
+        'max-md': { max: '768px' }, // Defines a min-width breakpoint
+        'max-lg': { max: '1024px' }, // Defines a min-width breakpoint
+        'max-xl': { max: '1280px' }, // Defines a min-width breakpoint
       },
       fontFamily: {
         'cookie-regular': ['Cookie', 'cursive'],
