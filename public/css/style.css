@@ -940,6 +940,13 @@ body {
   }
   
   /* About section styles */
+
+  .about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+
   .About {
     margin-top: 20px;
   }
@@ -1147,6 +1154,11 @@ body {
 
   .gap-40 {
     gap: 0;
+  }
+
+  #animatedElement {
+    display: flex;
+    flex-direction: column;
   }
 
   .pb-5 {
