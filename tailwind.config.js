@@ -8,10 +8,17 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        'max-sm': { max: '480px' }, // Defines a max-width breakpoint
-        'max-md': { max: '768px' }, // Defines a min-width breakpoint
-        'max-lg': { max: '1024px' }, // Defines a min-width breakpoint
-        'max-xl': { max: '1280px' }, // Defines a min-width breakpoint
+        // Default min-width breakpoints
+        sm: '640px',
+        md: '768px',
+        lg: '1024px',
+        xl: '1280px',
+
+        // Custom max-width breakpoints
+        'max-sm': { max: '480px' },
+        'max-md': { max: '768px' },
+        'max-lg': { max: '1024px' },
+        'max-xl': { max: '1280px' },
       },
       fontFamily: {
         'cookie-regular': ['Cookie', 'cursive'],
