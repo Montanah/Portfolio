@@ -309,6 +309,11 @@ body {
     gap: 0;
   }
 
+  #animatedElement {
+    display: flex;
+    flex-direction: column;
+  }
+  
   .pb-5 {
     padding-bottom: 0;
   }
