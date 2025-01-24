@@ -101,6 +101,13 @@ body {
   }
   
   /* About section styles */
+
+  .about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+
   .About {
     margin-top: 20px;
   }
@@ -313,7 +320,7 @@ body {
     display: flex;
     flex-direction: column;
   }
-  
+
   .pb-5 {
     padding-bottom: 0;
   }
