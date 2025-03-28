@@ -158,7 +158,7 @@ function isElementInViewport(el) {
   handleAnimation();
 
 document.addEventListener('DOMContentLoaded', function () {
-    var swiper = new Swiper('.swiper-container', {
+    var Swiper = new Swiper('.swiper-container', {
       slidesPerView: 1,
       spaceBetween: 10,
       navigation: {
@@ -194,3 +194,15 @@ hammer.on('swiperight', function () {
         previousImage.classList.remove('hidden');
     }
 });
+
+// Initialize Swiper for mobile
+// if (window.innerWidth < 768) {
+//     new Swiper('.swiper-container', {
+//         slidesPerView: 1,
+//         spaceBetween: 20,
+//         pagination: {
+//             el: '.swiper-pagination',
+//             clickable: true,
+//         },
+//     });
+// }

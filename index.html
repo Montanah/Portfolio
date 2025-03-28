@@ -7,13 +7,12 @@
     <meta name="keywords" content="Software Engineering, JavaScript, React, HTML, CSS, Tailwind CSS, REST API, NodeJS, ExpressJS, MongoDB, MySQL, Redis, Python, Flask, SQLAlchemy, Mocha, Chai, Unittest, Webpack, Nginx">
     <meta name="author" content="Mititi Isaac">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="public/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
     <script src="js/script.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
@@ -23,317 +22,390 @@
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-
         gtag('config', 'G-YR07E4J0CJ');
     </script>
 </head>
-<body class="">
-    <section id="top" class="bg-gradient-to-r from-blue-600 via-indigo-600 via-teal-400 to-gray-300 sticky w-full top-0 z-1 skeleton-loader">
-        <section class="nav">
-            <ul>
-               <li onclick="navigateToSkills()" class="text-black hover:text-white font-bold sm:text-8 md:text-10 border-2 border-black py-1 px-3 hover:bg-blue-600 rounded-2xl cursor-pointer">Skills</li>
-               <li onclick="navigateToExperience()" class="text-black hover:text-white font-bold sm:text-8 md:text-10 border-2 border-black py-1 px-3 hover:bg-blue-600 rounded-2xl cursor-pointer">Experience</li>
-                <li onclick="navigateToProjects()" class="text-black hover:text-white font-bold sm:text-8 md:text-10 border-2 border-black py-1 px-3 hover:bg-blue-600 rounded-2xl cursor-pointer">Projects</li>
+<body class="font-sans antialiased">
+    <!-- Top Section -->
+    <section id="top" class="bg-gradient-to-r from-blue-600 via-indigo-600 via-teal-400 to-gray-300 sticky w-full top-0 z-10">
+        <!-- Navigation -->
+        <nav class="py-4">
+            <ul class="flex justify-end space-x-2 md:space-x-4 mr-4 md:mr-8">
+               <li onclick="navigateToSkills()" class="text-black hover:text-white font-bold text-xs sm:text-sm md:text-base border-2 border-black py-1 px-2 md:px-3 hover:bg-blue-600 rounded-2xl cursor-pointer transition duration-300">Skills</li>
+               <li onclick="navigateToExperience()" class="text-black hover:text-white font-bold text-xs sm:text-sm md:text-base border-2 border-black py-1 px-2 md:px-3 hover:bg-blue-600 rounded-2xl cursor-pointer transition duration-300">Experience</li>
+               <li onclick="navigateToProjects()" class="text-black hover:text-white font-bold text-xs sm:text-sm md:text-base border-2 border-black py-1 px-2 md:px-3 hover:bg-blue-600 rounded-2xl cursor-pointer transition duration-300">Projects</li>
             </ul>
-        </section>
-        <section class="lpage mx-10 grid grid-cols-3 skeleton-loader">
-            <aside class="col-span-2">
-                <h1 class="pt-40 text-8xl sm:text-8xl md:text-10xl font-bold text-white tracking-tight custom-text-shadow loader-row">
+        </nav>
+        
+        <!-- Hero Section -->
+        <section class="container mx-auto px-4 md:px-10 py-10 md:py-20 grid grid-cols-1 lg:grid-cols-3 gap-2">
+            <div class="lg:col-span-2 flex flex-col justify-center">
+                <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-white tracking-tight [text-shadow:5px_5px_rgb(0,0,0)]">
                     Mititi Isaac
-                  </h1>                  
-                <div>
-                    <p class="text-7xl font-bold tracking-tighter text-shadow loader-row">
-                        I am a 
-                        <span id="typed" data-typed-items="Software Engineer, Frontend Developer, Backend Developer, Graphic Designer, Social Media Manager">
+                </h1>                  
+                <div class="mt-4 md:mt-6">
+                    <p class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold tracking-tighter text-white [text-shadow:3px_3px_2px_rgb(0,0,0)]">
+                        <span class="text-white">I am a </span>
+                        <span id="typed" data-typed-items="Software Engineer, Frontend Developer, Backend Developer, Graphic Designer, Social Media Manager" class="text-gray-900">
                         Software Engineer
                         </span>
                     </p>
                 </div>
-                <div>
-                <button type="button" onclick="navigateToContact()" class="bg-gray-900 mt-20 text-2xl hover:bg-blue-700 border-2 border-black hover:border-2 hover:border-black text-white font-bold py-4 px-10 rounded-full cursor-pointer loader-row">
-                    Work With Me
-                </button>
-            </div>                  
-            </aside>
-            <aside class="flex items-center justify-center hidden sm:flex">
-                <img src="Images/Official_Photo.png" alt="Mititi Isaac" class="w-full object-cover h-auto ml-10">
-            </aside>
+                <div class="mt-8 md:mt-12">
+                    <button type="button" onclick="navigateToContact()" class="bg-gray-900 text-white hover:bg-blue-700 border-2 border-black hover:border-black font-bold py-2 px-6 md:py-3 md:px-8 lg:py-4 lg:px-10 rounded-full cursor-pointer transition duration-300 text-sm sm:text-base md:text-lg">
+                        Work With Me
+                    </button>
+                </div>                  
+            </div>
+            <div class="hidden lg:flex items-right justify-right">
+                <img src="Images/Official_Photo.png" alt="Mititi Isaac" class="w-3/4 max-w-md object-cover h-90 ml-20 rounded-lg shadow-xl">
+            </div>
         </section>
     </section>
-    <section id="bottom" class="bg-black relative mt-160 skeleton-loader">
-        <section class="about px-10 grid gap-40 grid-cols-2 max-sm:flex max-sm:flex-col animate-slideUp" id="animatedElement">
-            <span>
-                <h1 class="pt-10 pb-5 text-4xl text-blue-400 animate">About</h1>
-                <p class="text-gray-400 loader-row">Welcome to my digital space! I am a versatile professional with a passion for crafting exceptional digital experiences. As a Software Engineer, I seamlessly navigate the realms of frontend and backend development, bringing ideas to life through code. My design flair extends beyond development – I am a skilled Graphic Designer, shaping visual narratives that captivate and inspire. As a Social Media Manager, I leverage creativity and strategy to build engaging online presences. This multidisciplinary approach allows me to seamlessly merge technology, design, and communication, ensuring each project is a harmonious blend of innovation and aesthetics. Explore my portfolio to witness the convergence of my diverse skills into cohesive and impactful digital solutions.</p>
-            </span>
-            <span>
-                <h2 class="pt-10 pb-5 text-4xl text-blue-400">Personal Information</h2>
-                <span class="text-gray-400">
+
+    <!-- Bottom Section -->
+    <section id="bottom" class="bg-black relative z-20">
+        <!-- About Section -->
+        <section class="about container mx-auto px-4 md:px-10 py-10 md:py-20 grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-16 animate-slideUp">
+            <div>
+                <h1 class="text-2xl md:text-3xl lg:text-4xl text-blue-400 pb-4">About</h1>
+                <p class="text-gray-400 text-sm sm:text-base md:text-lg">
+                    Welcome to my digital space! I am a versatile professional with a passion for crafting exceptional digital experiences. As a Software Engineer, I seamlessly navigate the realms of frontend and backend development, bringing ideas to life through code. My design flair extends beyond development – I am a skilled Graphic Designer, shaping visual narratives that captivate and inspire. As a Social Media Manager, I leverage creativity and strategy to build engaging online presences. This multidisciplinary approach allows me to seamlessly merge technology, design, and communication, ensuring each project is a harmonious blend of innovation and aesthetics. Explore my portfolio to witness the convergence of my diverse skills into cohesive and impactful digital solutions.
+                </p>
+            </div>
+            <div>
+                <h2 class="text-2xl md:text-3xl lg:text-4xl text-blue-400 pb-4">Personal Information</h2>
+                <div class="text-gray-400 space-y-2 text-sm sm:text-base md:text-lg">
                     <p>Name: Mititi Isaac</p>
                     <p>Institution: ALX</p>
                     <p>Course: Software Engineering</p>
                     <p>Graduation Year: 2023</p>
                     <p>Location: Nairobi, Kenya</p>
-                    <p class="block">
-                        <span class="inline-flex items-center">
-                            <img src="Images/phone_icon.svg" alt="PhoneIcon" class="w-6 h-6 mr-2"> +254 737 336 511
-                        </span>
+                    <p class="flex items-center">
+                        <img src="Images/phone_icon.svg" alt="PhoneIcon" class="w-4 h-4 md:w-5 md:h-5 mr-2"> +254 737 336 511
                     </p>
-                    <p class="block">
-                        <span class="inline-flex items-center">
-                            <img src="Images/email_icon.svg" alt="EmailIcon" class="w-6 h-6 mr-2">
-                            <a href="mailto:mititi.isaac@gmail.com">mititi.isaac@gmail.com</a>
-                        </span>
+                    <p class="flex items-center">
+                        <img src="Images/email_icon.svg" alt="EmailIcon" class="w-4 h-4 md:w-5 md:h-5 mr-2">
+                        <a href="mailto:mititi.isaac@gmail.com" class="hover:text-blue-400 transition duration-300">mititi.isaac@gmail.com</a>
                     </p>
-                    <p class="block">
-                        <span class="inline-flex items-center">
-                            <img src="Images/linkedin_icon.svg" alt="LinkedInIcon" class="w-6 h-6 mr-2">
-                            <a href="https://www.linkedin.com/in/io-mititi/" target="_blank" rel="noopener">I.O. Mititi</a>
-                        </span>
+                    <p class="flex items-center">
+                        <img src="Images/LinkedIn Logo.png" alt="LinkedInIcon" class="w-4 h-4 md:w-5 md:h-5 mr-2">
+                        <a href="https://www.linkedin.com/in/io-mititi/" target="_blank" rel="noopener" class="hover:text-blue-400 transition duration-300">I.O. Mititi</a>
                     </p>
-                    <p class="block">
-                        <span class="inline-flex items-center">
-                            <img src="Images/github_icon.svg" alt="GitHubIcon" class="w-6 h-6 mr-2">
-                            <a href="https://github.com/Montanah/" target="_blank" rel="noopener">Montanah</a>
-                        </span>
+                    <p class="flex items-center">
+                        <img src="Images/github_icon.svg" alt="GitHubIcon" class="w-4 h-4 md:w-5 md:h-5 mr-2">
+                        <a href="https://github.com/Montanah/" target="_blank" rel="noopener" class="hover:text-blue-400 transition duration-300">Montanah</a>
                     </p>
-                </span>
-            </span>
+                </div>
+            </div>
         </section>
-        <section id="skills" class="m-10 skeleton-loader animate-slideUp">
-            <h1 class="text-4xl text-blue-400 pb-5">Skills</h1>
-            <p class="text-2xl text-gray-400 loader-row">JavaScript, React, HTML, CSS, Tailwind CSS, REST API, NodeJS, ExpressJS, MongoDB, MySQL, Redis, Python, Flask, SQLAlchemy, Mocha, Chai, Unittest, Webpack, Nginx, Graphic Design, Google Analytics, Canva, Figma, Wireframing, Hootsuite</p>
+
+        <!-- Skills Section -->
+        <section id="skills" class="container mx-auto px-4 md:px-10 py-10 md:py-16 animate-slideUp">
+            <h1 class="text-2xl md:text-3xl lg:text-4xl text-blue-400 pb-4">Skills</h1>
+            <p class="text-gray-400 text-sm sm:text-base md:text-lg">
+                JavaScript, React, Vite, HTML, CSS, Tailwind CSS, REST API, NodeJS, ExpressJS, MongoDB, MySQL, Redis, Python, Flask, SQLAlchemy, Mocha, Chai, Unittest, Webpack, Nginx, GitHub Pages, Netlify & Netlify CI/CD pipeline, Graphic Design, Google Analytics, Canva, Figma, Wireframing, Hootsuite
+            </p>
         </section>
-        <section id="experience" class="m-10 skeleton-loader animate-slideUp">
-            <h1 class="text-4xl text-blue-400 pb-5">Experience</h1>
-            <h3 class="text-2xl text-purple-500">Web Developer, Graphic Designer & Social Media Manager</h3>
-            <p>Deliverance Church Int'l - Nyansiongo, Kisii, Kenya</p>
-            <span class="text-gray-400">
-                <p class="exp loader-row">January 2020 to Present</p>
-                    <ul class="list-disc ml-5">
-                        <li class="exp">Developed the organisation’s website and frequently update it.</li>
-                        <li class="exp">Designing engaging and interactive digital content to captivate viewers, using Figma, Adobe and Canva.</li>
-                        <li class="exp">Managing and growing social media presence, resulting in a 100% increase in website traffic.</li>
-                        <li class="exp">Creating visually appealing content for print media.</li>
-                    </ul>
-            </span>
-        </section>
-        <section id="projects" class="m-10 skeleton-loader animate-slideUp">
-            <h1 class="text-4xl text-blue-400 pb-5">Projects</h1>
-            <div class="relative overflow-hidden mt-5">
-                <ul id="projectsSwipe" class="transition-transform ease-in-out duration-300 mx-20">
-                    <li class="bg-gradient-to-r from-blue-600 via-blue-500 to-purple-600 rounded-md p-5 mb-5 w-full">
-                        <h3 class="text-3xl text-black text-center font-bold projects-text-shadow">Deliverance Church International Nyansiongo Website</h3>
-                        <div class="mt-5 grid grid-cols-2 loader-row">
-                            <img src="Images/Deliverance Church Website Screenshot.png" alt="DCI_Nyansiongo_Website" class="w-full h-auto">
-                            <span>
-                                <p id="dciP" class="text-gray-400 mx-10 mb-5 text-2xl">I built the website for the organisation I currently work with using HTML, CSS and Vanilla Javascript. I also worked with Google Map API to embed the map location of the church on the website. Completed and deployed in January 2024.</p>
-                                <p class="link mx-10">
-                                    <span class="flex flex-row">
-                                        <img src="Images/www_icon.svg" alt="wwww Icon" class="w-6 h-6 mr-2 linkIcons"> <span id="dciPLink">Project Link: 
-                                        <a href="https://www.deliverancechurchinternationalnyansiongo.org" target="_blank" rel="noopener">www.deliverancechurchinternationalnyansiongo.org</a> <br>
-                                        </span>
-                                    </span> 
-                                    <span class="flex flex-row">
-                                        <img src="Images/github_icon2.svg" alt="GitHubIcon" class="w-6 h-6 mr-2 linkIcons"> GitHub Repo Link: <a href="https://github.com/Montanah/DCI-Nyansiongo-Website" target="_blank" rel="noopener">DCI-Nyansiongo-Website</a>
-                                    </span>
-                                </p>
-                            </span>
-                        </div>
-                    </li>
-                    <li class="bg-gradient-to-r from-blue-600 via-blue-500 to-purple-600 rounded-md p-5 mb-5 w-full hidden">
-                        <h3 class="text-3xl text-black text-center font-bold projects-text-shadow">Devport Web App</h3>
-                        <div class="mt-5 grid grid-cols-2">
-                            <img src="Images/DevPort Logo.png" alt="Devport" class="w-3/4 h-auto justify-center items-center">
-                            <span>
-                                <p id="devP" class="text-gray-400 mx-10 mb-5 text-2xl">DevPort is a user-friendly fullstack web app for developers to showcase skills, education, and projects. With seamless GitHub integration, it streamlines sign-up and populates profiles effortlessly. Users can personalize their portfolios for a visually compelling presentation of their work. I was the Frontend Engineer for the project; making use of HTML, CSS, JavaScript, React.js, Node.js, Nginx, Webpack. Completed and deployed in November 2023.</p>
-                                <p class="link mx-10">
-                                    <span class="flex flex-row">
-                                        <img src="Images/www_icon.svg" alt="wwww Icon" class="w-6 h-6 mr-2 linkIcons">Project Link: <a href="http://devport.edwardiniko.tech" target="_blank" rel="noopener">Devport</a> <br>
-                                    </span>
-                                    <span class="flex flex-row">
-                                        <img src="Images/github_icon2.svg" alt="GitHubIcon" class="w-6 h-6 mr-2 linkIcons"> GitHub Repo Link: <a href="https://github.com/Montanah/DevPort" target="_blank" rel="noopener">Devport</a>
-                                    </span>
-                                </p>
-                            </span>
-                        </div>
-                    </li>
-                    <li class="bg-gradient-to-r from-blue-600 via-blue-500 to-purple-600 rounded-md p-5 mb-5 w-full hidden">
-                        <h3 class="text-3xl text-black text-center font-bold projects-text-shadow">EdAI Web App</h3>
-                        <div class="mt-5 grid grid-cols-2 relative">
-                            <ul id="imagesSwipe" class="flex gap-4 max-w-screen-xl mx-auto">
-                                <li class="image">
-                                    <img src="Images/Dashboard.jpg" alt="EdAI" class="w-full h-auto">
-                                </li>
-                                <li class="image">
-                                    <img src="Images/AI Support Screenshot.jpg" alt="AI Chat Support" class="w-full h-auto">
-                                </li>
-                                <li class="image">
-                                    <img src="Images/SignUp form.jpg" alt="SignUp Form" class="w-full h-auto">
-                                </li>
-                                <li class="image">
-                                    <img src="Images/Login Page.jpg" alt="LogIn Form" class="w-full h-auto">
-                                </li>
-                            </ul>                           
-                            <span>
-                                <p id="edaiP" class="text-gray-400 mx-10 mb-5 text-2xl">Was part of a team that designed and developed EdAI, a responsive AI-supported education web application using HTML, CSS, JavaScript, React.js, and Node.js. Implemented responsive design and optimized performance for an enhanced user experience. Completed and deployed in July 2023.</p>
-                                <p class="link mx-10">
-                                    <span class="flex flex-row">
-                                        <img src="Images/www_icon.svg" alt="wwww Icon" class="w-6 h-6 mr-2 linkIcons">Project Link: <a href="http://edai.popeh.tech" target="_blank" rel="noopener">edai.popeh.tech</a> <br>
-                                    </span>
-                                    <span class="flex flex-row">
-                                        <img src="Images/github_icon2.svg" alt="GitHubIcon" class="w-6 h-6 mr-2 linkIcons">GitHub Repo Link: <a href="https://github.com/Montanah/EdAI" target="_blank" rel="noopener">EdAI</a>
-                                    </span>
-                                </p>
-                            </span>
-                        </div>                        
-                    </li>
-                    <li class="bg-gradient-to-r from-blue-600 via-blue-500 to-purple-600 rounded-md p-5 mb-5 w-full hidden">
-                        <h3 class="text-3xl text-black text-center font-bold projects-text-shadow">AirBnB Clone</h3>
-                        <div class="mt-5">
-                            <p class="text-gray-400 mx-10 mb-5 text-2xl">Was part of a team that built an AirBnB clone as one of our school projects. Completed in June 2023.</p>
-                            <p class="link mx-10">
-                                <span class="flex flex-row">
-                                    <img src="Images/github_icon2.svg" alt="GitHubIcon" class="w-6 h-6 mr-2 linkIcons">Project GitHub Link: <a href="https://github.com/Montanah/AirBnB_clone_v4" target="_blank" rel="noopener">AirBnB_clone_v4</a>
-                                </span>
-                            </p>
-                        </div>
-                    </li>
-                    <li class="bg-gradient-to-r from-blue-600 via-blue-500 to-purple-600 rounded-md p-5 mb-5 w-full hidden">
-                        <h3 class="text-3xl text-black text-center font-bold projects-text-shadow">Graphic Design Work</h3>
-                        <div class="mt-5">
-                            <p class="text-gray-400 mx-10 mb-5 text-2xl">Here's a link to some of the graphic design work i've done for my clients, some inclusive of social media management. I work with some clients on a retainer basis, some projects are ongoing.</p>
-                            <p class="link mx-10">
-                                <span class="flex flex-row">
-                                    <img src="Images/www_icon.svg" alt="wwww Icon" class="w-6 h-6 mr-2 linkIcons">Link: 
-                                    <a href="https://mititiisaac.wixsite.com/iomititi" target="_blank" rel="noopener">https://mititiisaac.wixsite.com/iomititi</a>
-                                </span>
-                            </p>
-                        </div>
-                    </li>
+
+        <!-- Experience Section -->
+        <section id="experience" class="container mx-auto px-4 md:px-10 py-10 md:py-16 animate-slideUp">
+            <h1 class="text-2xl md:text-3xl lg:text-4xl text-blue-400 pb-4">Experience</h1>
+            <h3 class="text-xl md:text-2xl text-purple-500">Web Developer, Graphic Designer & Social Media Manager</h3>
+            <p class="text-gray-300 text-sm sm:text-base">Deliverance Church Int'l - Nyansiongo, Kisii, Kenya</p>
+            <div class="text-gray-400 mt-4">
+                <p class="text-sm sm:text-base">January 2020 to Present</p>
+                <ul class="list-disc ml-5 space-y-2 mt-2 text-sm sm:text-base">
+                    <li>Developed the organisation's website and frequently update it.</li>
+                    <li>Designing engaging and interactive digital content to captivate viewers, using Figma, Adobe and Canva.</li>
+                    <li>Managing and growing social media presence, resulting in a 100% increase in website traffic.</li>
+                    <li>Creating visually appealing content for print media.</li>
                 </ul>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="container mx-auto px-4 md:px-10 py-10 md:py-16 animate-slideUp">
+            <h1 class="text-2xl md:text-3xl lg:text-4xl text-blue-400 pb-4">Projects</h1>
+            <div class="relative mt-5">
+                <div class="overflow-hidden">
+                    <ul id="projectsSwipe" class="transition-transform duration-300 mx-4 md:mx-10 lg:mx-20 space-y-8">
+                        <!-- Project 1 -->
+                        <li class="bg-gradient-to-r from-blue-600 via-blue-500 to-purple-600 rounded-md p-4 md:p-6">
+                            <h3 class="text-xl md:text-2xl lg:text-3xl text-black text-center font-bold [text-shadow:1px_1px_2px_rgb(196,194,194)]">M'Global Business Consultancy Site</h3>
+                            <div class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
+                                <img src="Images/Mglobalss.png" alt="MGlobal Business Consultancy Website" class="w-full h-auto rounded-lg shadow-md">
+                                <div>
+                                    <p class="text-gray-200 mb-4 text-xs sm:text-sm md:text-base lg:text-lg">
+                                        I built the site for the organisation using React with Vite frontend build tool and Tailwind CSS. I deployed the single page site on Netlify using Netlify CI/CD pipeline. Completed and deployed in March 2025.
+                                    </p>
+                                    <div class="space-y-2 text-xs sm:text-sm">
+                                        <p class="flex items-center">
+                                            <img src="Images/www_icon.svg" alt="www Icon" class="w-4 h-4 md:w-5 md:h-5 mr-2">
+                                            <span>
+                                                Project Link: 
+                                                <a href="https://mglobalbusinessconsultancy.netlify.app" target="_blank" rel="noopener" class="hover:text-blue-200 transition duration-300">mglobalbusinessconsultancy.netlify.app</a>
+                                            </span>
+                                        </p>
+                                        <p class="flex items-center">
+                                            <img src="Images/github_icon2.svg" alt="GitHubIcon" class="w-4 h-4 md:w-5 md:h-5 mr-2">
+                                            GitHub Repo Link: 
+                                            <a href="https://github.com/Montanah/delivery-folio-connect.git" target="_blank" rel="noopener" class="hover:text-blue-200 transition duration-300">Delivery-folio-connect</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <!-- Project 2 -->
+                        <li class="bg-gradient-to-r from-blue-600 via-blue-500 to-purple-600 rounded-md p-4 md:p-6">
+                            <h3 class="text-xl md:text-2xl lg:text-3xl text-black text-center font-bold [text-shadow:1px_1px_2px_rgb(196,194,194)]">Deliverance Church International Nyansiongo Website</h3>
+                            <div class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
+                                <img src="Images/Deliverance Church Website Screenshot.png" alt="DCI_Nyansiongo_Website" class="w-full h-auto rounded-lg shadow-md">
+                                <div>
+                                    <p class="text-gray-200 mb-4 text-xs sm:text-sm md:text-base lg:text-lg">
+                                        I built the website for the organisation I currently work with using HTML, CSS and Vanilla Javascript. I also worked with Google Map API to embed the map location of the church on the website. Completed and deployed in January 2024.
+                                    </p>
+                                    <div class="space-y-2 text-xs sm:text-sm">
+                                        <p class="flex items-center">
+                                            <img src="Images/www_icon.svg" alt="www Icon" class="w-4 h-4 md:w-5 md:h-5 mr-2">
+                                            <span>
+                                                Project Link: 
+                                                <a href="https://www.deliverancechurchinternationalnyansiongo.org" target="_blank" rel="noopener" class="hover:text-blue-200 transition duration-300">www.deliverancechurchinternationalnyansiongo.org</a>
+                                            </span>
+                                        </p>
+                                        <p class="flex items-center">
+                                            <img src="Images/github_icon2.svg" alt="GitHubIcon" class="w-4 h-4 md:w-5 md:h-5 mr-2">
+                                            GitHub Repo Link: 
+                                            <a href="https://github.com/Montanah/DCI-Nyansiongo-Website" target="_blank" rel="noopener" class="hover:text-blue-200 transition duration-300">DCI-Nyansiongo-Website</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <!-- Hidden Projects -->
+                        <li class="bg-gradient-to-r from-blue-600 via-blue-500 to-purple-600 rounded-md p-4 md:p-6 hidden">
+                            <h3 class="text-xl md:text-2xl lg:text-3xl text-black text-center font-bold [text-shadow:1px_1px_2px_rgb(196,194,194)]">Devport Web App</h3>
+                            <div class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
+                                <img src="Images/DevPort Logo.png" alt="Devport" class="w-3/4 h-auto justify-center items-center rounded-lg shadow-md">
+                                <div>
+                                    <p class="text-gray-200 mb-4 text-xs sm:text-sm md:text-base lg:text-lg">
+                                        DevPort is a user-friendly fullstack web app for developers to showcase skills, education, and projects. With seamless GitHub integration, it streamlines sign-up and populates profiles effortlessly. Users can personalize their portfolios for a visually compelling presentation of their work. I was the Frontend Engineer for the project; making use of HTML, CSS, JavaScript, React.js, Node.js, Nginx, Webpack. Completed and deployed in November 2023.
+                                    </p>
+                                    <div class="space-y-2 text-xs sm:text-sm">
+                                        <p class="flex items-center">
+                                            <img src="Images/www_icon.svg" alt="www Icon" class="w-4 h-4 md:w-5 md:h-5 mr-2">
+                                            Project Link: 
+                                            <a href="http://devport.edwardiniko.tech" target="_blank" rel="noopener" class="hover:text-blue-200 transition duration-300">Devport</a>
+                                        </p>
+                                        <p class="flex items-center">
+                                            <img src="Images/github_icon2.svg" alt="GitHubIcon" class="w-4 h-4 md:w-5 md:h-5 mr-2">
+                                            GitHub Repo Link: 
+                                            <a href="https://github.com/Montanah/DevPort" target="_blank" rel="noopener" class="hover:text-blue-200 transition duration-300">Devport</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="bg-gradient-to-r from-blue-600 via-blue-500 to-purple-600 rounded-md p-4 md:p-6">
+                            <h3 class="text-xl md:text-2xl lg:text-3xl text-black text-center font-bold [text-shadow:1px_1px_2px_rgb(196,194,194)]">EdAI Web App</h3>
+                            <div class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
+                                <div class="relative h-64 md:h-80 w-full overflow-hidden">
+                                    <ul id="imagesSwipe" class="flex h-full items-center justify-center gap-4 px-[25%]">
+                                        <li class="image h-full w-24 flex-shrink-0 rounded-xl overflow-hidden transition-all duration-400 ease-in-out shadow-lg hover:w-full hover:z-10 hover:transform hover:-translate-x-[calc(25%-3rem)]">
+                                            <img src="Images/Dashboard.jpg" alt="EdAI Dashboard" class="w-full h-full object-cover">
+                                        </li>
+                                        <li class="image h-full w-24 flex-shrink-0 rounded-xl overflow-hidden transition-all duration-400 ease-in-out shadow-lg hover:w-full hover:z-10 hover:transform hover:-translate-x-[calc(50%-7rem)]">
+                                            <img src="Images/AI Support Screenshot.jpg" alt="AI Chat Support" class="w-full h-full object-cover">
+                                        </li>
+                                        <li class="image h-full w-24 flex-shrink-0 rounded-xl overflow-hidden transition-all duration-400 ease-in-out shadow-lg hover:w-full hover:z-10 hover:transform hover:-translate-x-[calc(50%-11rem)]">
+                                            <img src="Images/SignUp form.jpg" alt="SignUp Form" class="w-full h-full object-cover">
+                                        </li>
+                                        <li class="image h-full w-24 flex-shrink-0 rounded-xl overflow-hidden transition-all duration-400 ease-in-out shadow-lg hover:w-full hover:z-10 hover:transform hover:-translate-x-[calc(75%-10rem)]">
+                                            <img src="Images/Login Page.jpg" alt="LogIn Form" class="w-full h-full object-cover">
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <p class="text-gray-200 mb-4 text-xs sm:text-sm md:text-base lg:text-lg">
+                                        Was part of a team that designed and developed EdAI, a responsive AI-supported education web application using HTML, CSS, JavaScript, React.js, and Node.js. Implemented responsive design and optimized performance for an enhanced user experience. Completed and deployed in July 2023.
+                                    </p>
+                                    <div class="space-y-2 text-xs sm:text-sm">
+                                        <p class="flex items-center">
+                                            <img src="Images/www_icon.svg" alt="www Icon" class="w-4 h-4 md:w-5 md:h-5 mr-2">
+                                            Project Link: 
+                                            <a href="http://edai.popeh.tech" target="_blank" rel="noopener" class="hover:text-blue-200 transition duration-300">edai.popeh.tech</a>
+                                        </p>
+                                        <p class="flex items-center">
+                                            <img src="Images/github_icon2.svg" alt="GitHubIcon" class="w-4 h-4 md:w-5 md:h-5 mr-2">
+                                            GitHub Repo Link: 
+                                            <a href="https://github.com/Montanah/EdAI" target="_blank" rel="noopener" class="hover:text-blue-200 transition duration-300">EdAI</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="bg-gradient-to-r from-blue-600 via-blue-500 to-purple-600 rounded-md p-4 md:p-6 hidden">
+                            <h3 class="text-xl md:text-2xl lg:text-3xl text-black text-center font-bold [text-shadow:1px_1px_2px_rgb(196,194,194)]">AirBnB Clone</h3>
+                            <div class="mt-4">
+                                <p class="text-gray-200 mb-4 text-xs sm:text-sm md:text-base lg:text-lg">
+                                    Was part of a team that built an AirBnB clone as one of our school projects. Completed in June 2023.
+                                </p>
+                                <div class="space-y-2 text-xs sm:text-sm">
+                                    <p class="flex items-center">
+                                        <img src="Images/github_icon2.svg" alt="GitHubIcon" class="w-4 h-4 md:w-5 md:h-5 mr-2">
+                                        Project GitHub Link: 
+                                        <a href="https://github.com/Montanah/AirBnB_clone_v4" target="_blank" rel="noopener" class="hover:text-blue-200 transition duration-300">AirBnB_clone_v4</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="bg-gradient-to-r from-blue-600 via-blue-500 to-purple-600 rounded-md p-4 md:p-6 hidden">
+                            <h3 class="text-xl md:text-2xl lg:text-3xl text-black text-center font-bold [text-shadow:1px_1px_2px_rgb(196,194,194)]">Graphic Design Work</h3>
+                            <div class="mt-4">
+                                <p class="text-gray-200 mb-4 text-xs sm:text-sm md:text-base lg:text-lg">
+                                    Here's a link to some of the graphic design work i've done for my clients, some inclusive of social media management. I work with some clients on a retainer basis, some projects are ongoing.
+                                </p>
+                                <div class="space-y-2 text-xs sm:text-sm">
+                                    <p class="flex items-center">
+                                        <img src="Images/www_icon.svg" alt="www Icon" class="w-4 h-4 md:w-5 md:h-5 mr-2">
+                                        Link: 
+                                        <a href="https://mititiisaac.wixsite.com/iomititi" target="_blank" rel="noopener" class="hover:text-blue-200 transition duration-300">https://mititiisaac.wixsite.com/iomititi</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
                 <div class="absolute inset-y-0 left-0 flex items-center">
-                    <button type="button" id="leftArrow" onclick="handlePrevList()" class="border-2 border-white rounded-full p-2 text-white" title="Left Arrow">
-                        <i class="fas fa-arrow-left"></i>
+                    <button type="button" id="leftArrow" onclick="handlePrevList()" class="border-2 border-white rounded-full p-2 text-white hover:bg-white hover:text-black transition duration-300" title="Left Arrow">
+                        <i class="fas fa-arrow-left text-sm md:text-base"></i>
                     </button>
                 </div>
                 <div class="absolute inset-y-0 right-0 flex items-center">
-                    <button type="button" id="rightArrow" onclick="handleNextList()" class="border-2 border-white rounded-full p-2 text-white" title="Right Arrow">
-                        <i class="fas fa-arrow-right"></i>
+                    <button type="button" id="rightArrow" onclick="handleNextList()" class="border-2 border-white rounded-full p-2 text-white hover:bg-white hover:text-black transition duration-300" title="Right Arrow">
+                        <i class="fas fa-arrow-right text-sm md:text-base"></i>
                     </button>
                 </div>
             </div>
         </section>
-        <section class="mt-10 mx-10 skeleton-loader animate-slideUp">
-            <h1 class="text-4xl text-blue-400 pb-5">Services</h1>
-            <div class="services grid gap-10 grid-cols-2 grid-rows-2">
-                <span>
-                    <h4 class="text-2xl text-purple-500">Frontend Development</h4>
-                    <p class="text-gray-400 loader-row">Experienced Frontend Developer specializing in:</p>
-                    <ul class="text-gray-400 loader-row list-disc ml-5">
+
+        <!-- Services Section -->
+        <section class="container mx-auto px-4 md:px-10 py-10 md:py-16 animate-slideUp">
+            <h1 class="text-2xl md:text-3xl lg:text-4xl text-blue-400 pb-6">Services</h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Frontend Development -->
+                <div class="bg-gray-900 rounded-lg p-6 shadow-lg">
+                    <h4 class="text-xl md:text-2xl text-purple-500 mb-4">Frontend Development</h4>
+                    <p class="text-gray-400 text-sm sm:text-base mb-4">Experienced Frontend Developer specializing in:</p>
+                    <ul class="text-gray-400 text-xs sm:text-sm space-y-2 list-disc ml-5">
                         <li>Creating visually stunning and user-friendly websites</li>
                         <li>Responsive web design and intuitive user interface development</li>
                         <li>Cross-browser compatibility and web performance optimization</li>
                         <li>Collaboration with design teams and codebase maintenance</li>
                         <li>Integration of APIs for enhanced functionality</li>
                         <li>Prioritization of accessibility compliance</li>
-                      </ul>
-                      <p class="text-gray-400 loader-row">Proficient in HTML, CSS, JavaScript, ReactJS, REST API consumption, Nginx, npm and Tailwind CSS.</p>
-                </span>
-                <span>
-                    <h4 class="text-2xl text-purple-500">Backend Development</h4>
-                    <p class="text-gray-400">Experienced Backend Developer specializing in:</p>
-                    <ul class="text-gray-400 list-disc ml-5">
-                      <li>Crafting robust server-side solutions for web applications</li>
-                      <li>Proficiency in npm, Node.js and Python</li>
-                      <li>Utilizing frameworks like Express.js and Flask for backend logic</li>
-                      <li>Managing relational and Non-relational databases</li>
-                      <li>Designing and implementing RESTful APIs</li>
-                      <li>Ensuring smooth communication between frontend and backend</li>
-                      <li>Server management using tools like Nginx</li>
-                      <li>Implementing secure authentication and authorization using JWT</li>
-                      <li>Version control with Git for collaborative development</li>
-                      <li>Embracing microservices architecture for scalability</li>
-                      <li>Designing scalable and modular backend systems</li>
-                      <li>Thorough testing and automation through CI/CD pipelines</li>
                     </ul>
-                    <p class="text-gray-400">Proficient in version control using Git, I foster collaborative development and efficient code management.</p>
-                    <p class="text-gray-400">My commitment is centered on delivering scalable, efficient, and secure backend solutions that exceed project objectives and contribute to the overall success of web applications.</p>
-                </span>
-                <span>
-                    <h4 class="text-2xl text-purple-500">Graphic Design</h4>
-                    <p class="text-gray-400">Graphic Designer with a focus on:</p>
-                    <ul class="text-gray-400 list-disc ml-5">
-                      <li>Utilizing creativity and proficiency in design tools, including Adobe Creative Suite and Figma</li>
-                      <li>Bringing concepts to life through visually stunning graphics</li>
-                      <li>Expertise in Figma for efficient collaboration and iteration</li>
-                      <li>Maintaining a keen eye for aesthetics, layout, and color theory</li>
-                      <li>Working on branding, marketing collateral, and other design projects</li>
-                      <li>Ensuring pixel-perfect designs and cohesive visual identities</li>
-                      <li>Collaborating closely with clients and teams</li>
-                      <li>Translating ideas into impactful visuals aligned with brand guidelines</li>
-                      <li>Commitment to delivering visually striking designs</li>
+                    <p class="text-gray-400 text-xs sm:text-base mt-4">Proficient in HTML, CSS, JavaScript, ReactJS, Vite, REST API consumption, Nginx, npm and Tailwind CSS.</p>
+                </div>
+                
+                <!-- Backend Development -->
+                <div class="bg-gray-900 rounded-lg p-6 shadow-lg">
+                    <h4 class="text-xl md:text-2xl text-purple-500 mb-4">Backend Development</h4>
+                    <p class="text-gray-400 text-sm sm:text-base mb-4">Experienced Backend Developer specializing in:</p>
+                    <ul class="text-gray-400 text-xs sm:text-sm space-y-2 list-disc ml-5">
+                        <li>Crafting robust server-side solutions for web applications</li>
+                        <li>Proficiency in npm, Node.js and Python</li>
+                        <li>Utilizing frameworks like Express.js and Flask for backend logic</li>
+                        <li>Managing relational and Non-relational databases</li>
+                        <li>Designing and implementing RESTful APIs</li>
+                        <li>Ensuring smooth communication between frontend and backend</li>
+                        <li>Server management using tools like Nginx</li>
+                        <li>Implementing secure authentication and authorization using JWT</li>
+                        <li>Version control with Git for collaborative development</li>
+                        <li>Embracing microservices architecture for scalability</li>
+                        <li>Designing scalable and modular backend systems</li>
+                        <li>Thorough testing and automation through CI/CD pipelines</li>
+                        <li>Deploying sites and apps using GitHub Pages and Netlify using Netlify CI/CD pipeline</li>
                     </ul>
-                    <p class="text-gray-400">My commitment is to deliver visually striking designs that make a lasting impression and elevate the overall visual appeal of any project.</p>
-                </span>
-                <span>
-                    <h4 class="text-2xl text-purple-500">Social Media Management</h4>
-                    <p class="text-gray-400">Social Media Manager specializing in:</p>
-                    <ul class="text-gray-400 list-disc ml-5">
-                      <li>Crafting and implementing strategic social media plans</li>
-                      <li>Platforms: Instagram, Twitter, Facebook, LinkedIn</li>
-                      <li>Creating engaging content with compelling copywriting and eye-catching visuals</li>
-                      <li>Ensuring consistent and impactful messaging</li>
-                      <li>Leveraging analytics tools to refine strategies based on performance metrics</li>
-                      <li>Maximizing engagement and brand visibility</li>
-                      <li>Curating content calendars and managing campaigns</li>
-                      <li>Fostering community engagement</li>
-                      <li>Staying current with industry trends</li>
-                      <li>Delivering results-driven social media initiatives</li>
-                      <li>Forging meaningful connections and elevating brand awareness</li>
+                    <p class="text-gray-400 text-xs sm:text-base mt-4">Proficient in version control using Git, I foster collaborative development and efficient code management.</p>
+                </div>
+                
+                <!-- Graphic Design -->
+                <div class="bg-gray-900 rounded-lg p-6 shadow-lg">
+                    <h4 class="text-xl md:text-2xl text-purple-500 mb-4">Graphic Design</h4>
+                    <p class="text-gray-400 text-sm sm:text-base mb-4">Graphic Designer with a focus on:</p>
+                    <ul class="text-gray-400 text-xs sm:text-sm space-y-2 list-disc ml-5">
+                        <li>Utilizing creativity and proficiency in design tools, including Adobe Creative Suite and Figma</li>
+                        <li>Bringing concepts to life through visually stunning graphics</li>
+                        <li>Expertise in Figma for efficient collaboration and iteration</li>
+                        <li>Maintaining a keen eye for aesthetics, layout, and color theory</li>
+                        <li>Working on branding, marketing collateral, and other design projects</li>
+                        <li>Ensuring pixel-perfect designs and cohesive visual identities</li>
+                        <li>Collaborating closely with clients and teams</li>
+                        <li>Translating ideas into impactful visuals aligned with brand guidelines</li>
+                        <li>Commitment to delivering visually striking designs</li>
                     </ul>
-                    <p class="text-gray-400">My commitment is to deliver results-driven social media initiatives that forge meaningful connections, elevate brand awareness, and contribute to overall business success.</p>
-                </span>
-                <span>
-                    <h4 class="text-2xl text-purple-500">Fullstack Development</h4>
-                    <p class="text-gray-400">I'm able to combine my frontend and backend knowledge whenever the job descrption requires to deliver a fullstack application for my clients.</p>
-                </span>
+                    <p class="text-gray-400 text-xs sm:text-base mt-4">My commitment is to deliver visually striking designs that make a lasting impression and elevate the overall visual appeal of any project.</p>
+                </div>
+                
+                <!-- Social Media Management -->
+                <div class="bg-gray-900 rounded-lg p-6 shadow-lg">
+                    <h4 class="text-xl md:text-2xl text-purple-500 mb-4">Social Media Management</h4>
+                    <p class="text-gray-400 text-sm sm:text-base mb-4">Social Media Manager specializing in:</p>
+                    <ul class="text-gray-400 text-xs sm:text-sm space-y-2 list-disc ml-5">
+                        <li>Skilled in utilizing Hootsuite for social media management</li>
+                        <li>Crafting and implementing strategic social media plans</li>
+                        <li>Platforms: Instagram, Twitter, Facebook, LinkedIn</li>
+                        <li>Creating engaging content with compelling copywriting and eye-catching visuals</li>
+                        <li>Ensuring consistent and impactful messaging</li>
+                        <li>Leveraging analytics tools to refine strategies based on performance metrics</li>
+                        <li>Maximizing engagement and brand visibility</li>
+                        <li>Curating content calendars and managing campaigns</li>
+                        <li>Fostering community engagement</li>
+                        <li>Staying current with industry trends</li>
+                        <li>Delivering results-driven social media initiatives</li>
+                        <li>Forging meaningful connections and elevating brand awareness</li>
+                    </ul>
+                    <p class="text-gray-400 text-xs sm:text-base mt-4">My commitment is to deliver results-driven social media initiatives that forge meaningful connections, elevate brand awareness, and contribute to overall business success.</p>
+                </div>
+                
+                <!-- Fullstack Development -->
+                <div class="bg-gray-900 rounded-lg p-6 shadow-lg md:col-span-2">
+                    <h4 class="text-xl md:text-2xl text-purple-500 mb-4">Fullstack Development</h4>
+                    <p class="text-gray-400 text-sm sm:text-base">I'm able to combine my frontend and backend knowledge whenever the job description requires to deliver a fullstack application for my clients.</p>
+                </div>
             </div>
         </section>
-        <section id="footer" class="skeleton-loader animate-slideUp">
-            <h1 class="text-4xl text-slate-400">Contact</h1>
-            <p class="block loader-row">
-                <span class="inline-flex items-center">
-                    <img src="Images/phone_icon.svg" alt="PhoneIcon" class="w-6 h-6 mr-2">
-                    <a href="tel:+254 737 336 511">+254 737 336 511</a>
-                </span>
-            </p>
-            <p class="block">
-                <span class="inline-flex items-center">
-                    <img src="Images/email_icon.svg" alt="EmailIcon" class="w-6 h-6 mr-2">
-                    <a href="mailto:mititi.isaac@gmail.com">mititi.isaac@gmail.com</a>
-                </span>
-            </p>
-            <p class="block">
-                <span class="inline-flex items-center">
-                    <img src="Images/linkedin_icon.svg" alt="LinkedInIcon" class="w-6 h-6 mr-2">
-                    <a href="https://www.linkedin.com/in/io-mititi/" target="_blank" rel="noopener">I.O. Mititi</a>
-                </span>
-            </p>
-            <p class="block">
-                <span class="inline-flex items-center">
-                    <img src="Images/github_icon2.svg" alt="GitHubIcon" class="w-6 h-6 mr-2">
-                    <a href="https://github.com/Montanah/" target="_blank" rel="noopener">Montanah</a>
-                </span>
-            </p>
-            <p class="block">
-                <span class="inline-flex items-center">
-                    <img src="Images/x_icon.svg" alt="TwitterIcon" class="w-6 h-6 mr-2">
-                    <a href="https://twitter.com/IO_Mititi" target="_blank" rel="noopener">@IO_Mititi</a>
-                </span>
-            </p>
-            <p>&copy; 2025 Mititi Isaac. All Rights Reserved.</p>
-        </section>    
+
+        <!-- Footer Section -->
+        <footer id="footer" class="container mx-auto px-4 md:px-10 py-10 md:py-16 animate-slideUp text-center">
+            <h1 class="text-2xl md:text-3xl lg:text-4xl text-slate-400 pb-6">Contact</h1>
+            <div class="flex flex-col items-center space-y-3 text-sm sm:text-base">
+                <p class="flex items-center">
+                    <img src="Images/phone_icon.svg" alt="PhoneIcon" class="w-4 h-4 md:w-5 md:h-5 mr-2">
+                    <a href="tel:+254737336511" class="text-gray-400 hover:text-blue-400 transition duration-300">+254 737 336 511</a>
+                </p>
+                <p class="flex items-center">
+                    <img src="Images/email_icon.svg" alt="EmailIcon" class="w-4 h-4 md:w-5 md:h-5 mr-2">
+                    <a href="mailto:mititi.isaac@gmail.com" class="text-gray-400 hover:text-blue-400 transition duration-300">mititi.isaac@gmail.com</a>
+                </p>
+                <p class="flex items-center">
+                    <img src="Images/LinkedIn Logo.png" alt="LinkedInIcon" class="w-4 h-4 md:w-5 md:h-5 mr-2">
+                    <a href="https://www.linkedin.com/in/io-mititi/" target="_blank" rel="noopener" class="text-gray-400 hover:text-blue-400 transition duration-300">I.O. Mititi</a>
+                </p>
+                <p class="flex items-center">
+                    <img src="Images/github_icon.svg" alt="GitHubIcon" class="w-4 h-4 md:w-5 md:h-5 mr-2">
+                    <a href="https://github.com/Montanah/" target="_blank" rel="noopener" class="text-gray-400 hover:text-blue-400 transition duration-300">Montanah</a>
+                </p>
+                <p class="flex items-center">
+                    <img src="Images/X Logo.png" alt="TwitterIcon" class="w-4 h-4 md:w-5 md:h-5 mr-2">
+                    <a href="https://twitter.com/IO_Mititi" target="_blank" rel="noopener" class="text-gray-400 hover:text-blue-400 transition duration-300">@IO_Mititi</a>
+                </p>
+            </div>
+            <p class="text-gray-500 text-xs sm:text-sm mt-8">&copy; 2025 Mititi Isaac. All Rights Reserved.</p>
+        </footer>
     </section>
 </body>
 </html>

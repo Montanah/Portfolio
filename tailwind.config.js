@@ -1,53 +1,23 @@
-module.exports = {
-  content: [
-    './index.html',
-    'css/style.css',
-    './js/script.js',
-  ],
-  // darkMode: false, // or 'media' or 'class'
+tailwind.config = {
   theme: {
-    extend: {
-      screens: {
-        // Default min-width breakpoints
-        sm: '640px',
-        md: '768px',
-        lg: '1024px',
-        xl: '1280px',
-
-        // Custom max-width breakpoints
-        'max-sm': { max: '480px' },
-        'max-md': { max: '768px' },
-        'max-lg': { max: '1024px' },
-        'max-xl': { max: '1280px' },
-      },
-      fontFamily: {
-        'cookie-regular': ['Cookie', 'cursive'],
-      },
-      fontSize: {
-        '7xl': ['1.4rem', { lineHeight: '1' }],
-        '8xl': ['2.5rem', { lineHeight: '1' }],
-        'sm-7xl': ['4.5rem', { lineHeight: '1' }],
-        'sm-8xl': ['6rem', { lineHeight: '1' }],
-      },
-    },
-    keyframes: {
-      slideUp: {
-        from: {
-          transform: 'translateY(-100%)',
-          opacity: 0,
-        },
-        to: {
-          transform: 'translateY(0)',
-          opacity: 1,
-        },
-      },
-    },
-    animation: {
-      slideUp: 'slideUp 1s ease-in-out',
-    },
-  },
-  variants: {
-    extend: {},
-  },
-  plugins: [],
+      extend: {
+          animation: {
+              'shimmer': 'shimmer 1.5s infinite',
+              'slideUp': 'slideUp 0.5s ease-out'
+          },
+          keyframes: {
+              shimmer: {
+                  '0%': { 'background-position': '-200% 0' },
+                  '100%': { 'background-position': '200% 0' }
+              },
+              slideUp: {
+                  '0%': { transform: 'translateY(20px)', opacity: '0' },
+                  '100%': { transform: 'translateY(0)', opacity: '1' }
+              }
+          },
+          backgroundImage: {
+              'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+          }
+      }
+  }
 }
