@@ -195,14 +195,3 @@ hammer.on('swiperight', function () {
     }
 });
 
-// Initialize Swiper for mobile
-// if (window.innerWidth < 768) {
-//     new Swiper('.swiper-container', {
-//         slidesPerView: 1,
-//         spaceBetween: 20,
-//         pagination: {
-//             el: '.swiper-pagination',
-//             clickable: true,
-//         },
-//     });
-// }
